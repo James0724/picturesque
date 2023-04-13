@@ -10,7 +10,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="container">
-          {/* <div className="social-link-wrapper"></div>
+          <div className="social-link-wrapper"></div>
           <div className="row pt-5 pb-5">
             <div className="col-md-4 d-flex flex-column align-items-center">
               <h6 className="footer_text">About Picturesque</h6>
@@ -83,7 +83,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-          </div> */}
+          </div>
 
           <div className="separetor pt-3 pb-3"></div>
           <div className="logo-wrapper d-flex justify-content-center pt-5">
