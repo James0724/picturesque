@@ -12,6 +12,7 @@ export const Menu = () => {
                   <Image
                     src="/assets/images/log.png"
                     fill
+                    priority
                     alt="backgroundimage"
                   />
                 </div>

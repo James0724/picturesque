@@ -57,7 +57,12 @@ export default function AboutIntro() {
             <div className="intro_image_container">
               <div className="basic_image">
                 <div className="unset_img">
-                  <Image src="/assets/images/Artboa.png" fill alt="Elephants" />
+                  <Image
+                    src="/assets/images/Artboa.png"
+                    fill
+                    priority
+                    alt="Elephants"
+                  />
                 </div>
               </div>
             </div>
