@@ -20,23 +20,25 @@ export default function Home() {
             <Image
               src="/assets/images/footerA.png"
               fill
+              priority
               alt="backgroundimage"
             />
           </div>
         </div>
       </section>
-      {/* <section id="featured_destinations">
+      <section id="featured_destinations">
         <FeaturedDestinations />
         <div className="footer_section_image">
           <div className="unset_img">
             <Image
               src="/assets/images/footerimgB.png"
               fill
+              priority
               alt="backgroundimage"
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* <section id="section_breaker">
         <Banner />

@@ -76,6 +76,7 @@ export default function FeaturedDestinations() {
                   <Image
                     src="/assets/images/harshil-gudka-77zGnfU_SFU-unsplash.jpg"
                     fill
+                    priority
                     alt="backgroundimage"
                   />
                 </div>
@@ -91,6 +92,7 @@ export default function FeaturedDestinations() {
                   <Image
                     src="/assets/images/pexels-photo-13348192.jpeg"
                     fill
+                    priority
                     alt="backgroundimage"
                   />
                 </div>
