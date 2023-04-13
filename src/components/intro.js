@@ -25,7 +25,7 @@ export default function AboutIntro() {
                       <h1>Experience serenity inspired by the land</h1>
                     </div>
                   </div>
-                  <p className="intro_text">
+                  <p>
                     We are a dynamic, proudly Kenya safari company. we have
                     professional licenced guides speaking four languages
                     English, Spanish, French and Swahili. Throught our work we
