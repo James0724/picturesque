@@ -10,10 +10,19 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      <p>
+        We are a dynamic, proudly Kenya safari company. we have professional
+        licenced guides speaking four languages English, Spanish, French and
+        Swahili. Throught our work we uphold environmental princriples and we
+        aim to help our community. We are at your service to make your dream
+        vacation a reality the way you want it to be with high quality
+        profesional services delivered by experienced, knowledgeable and
+        freindly staff.
+      </p>
       {/* <section id="hero">
         <Hero />
       </section> */}
-      <section id="about_intro">
+      {/* <section id="about_intro">
         <AboutIntro />
         <div className="footer_section_image">
           <div className="unset_img">
@@ -38,7 +47,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section id="section_breaker">
         <Banner />
