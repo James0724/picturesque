@@ -120,7 +120,7 @@
   }
   // INTRO IMAGE
   .basic_image {
-    height: 50vh !important;
+    height: 40vh !important;
   }
 
   // STYLING IMAGE IN INTRO SECTION
@@ -139,16 +139,6 @@
   .button-diamond {
     width: 6.5vw !important;
     height: 6.5vw !important;
-  }
-}
-
-@media only screen and (min-width: 663px) and (max-width: 700px) {
-  body {
-    background-color: green !important;
-  }
-  // ADVERT SECTION
-  .container__content {
-    width: 83% !important;
   }
 }
 

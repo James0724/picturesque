@@ -4,61 +4,63 @@ export const Menu = () => {
   return (
     <nav className="colorlib-nav" role="navigation">
       <div className="top-menu">
-        <div className="container-fluid full-width">
-          <div className="row pb-2 d-none d-lg-block d-xl-block">
-            <ul className="d-none d-lg-block d-xl-block">
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div className="separetor d-none d-lg-block d-xl-block"></div>
-          <div className="row pt-2 ">
-            <div className="col-1">
-              <div id="colorlib-logo">
-                <a href="index.html">
-                  <div className="unset_img">
-                    <Image
-                      src="/assets/images/log.png"
-                      fill
-                      alt="backgroundimage"
-                    />
-                  </div>
-                </a>
-              </div>
+        <div className="container-fluid">
+          <div className="row ">
+            <div id="colorlib-logo">
+              <a href="index.html">
+                <div className="unset_img">
+                  <Image
+                    src="/assets/images/log.png"
+                    fill
+                    alt="backgroundimage"
+                  />
+                </div>
+              </a>
             </div>
-            <div className="col-11  menu-1 d-flex align-items-center justify-content-end">
+            <div className="menu-1">
               <ul className="d-none d-lg-block d-xl-block">
                 <li className="active">
                   <a href="index.html">Home</a>
                 </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
                 <li className="has-dropdown">
-                  <a href="tours.html">Safari Packages</a>
+                  <a href="tours.html">Experiences</a>
                   <ul className="dropdown">
                     <li>
-                      <a href="#">Destination</a>
+                      <a href="#">Marine park safaris</a>
                     </li>
                     <li>
-                      <a href="#">Cruises</a>
+                      <a href="#">Cultural safaris</a>
                     </li>
                     <li>
-                      <a href="#">Hotels</a>
+                      <a href="#">Game drive safaris</a>
                     </li>
                     <li>
-                      <a href="#">Booking</a>
+                      <a href="#">City excursion safaris</a>
                     </li>
                   </ul>
                 </li>
 
-                <li>
-                  <a href="blog.html">Safari Blogs</a>
+                <li className="has-dropdown">
+                  <a href="tours.html">Journeys</a>
+                  <ul className="dropdown">
+                    <li>
+                      <a href="#">Family journeys</a>
+                    </li>
+                    <li>
+                      <a href="#">Group journeys</a>
+                    </li>
+                    <li>
+                      <a href="#">Solo journeys</a>
+                    </li>
+                    <li>
+                      <a href="#">Couple journeys</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
+
                 <li>
                   <a href="contact.html">Contact</a>
                 </li>
