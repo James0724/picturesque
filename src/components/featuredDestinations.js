@@ -78,10 +78,7 @@ export default function FeaturedDestinations() {
             </div>
             <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
               <div className="item">
-                <img
-                  src="https://images.pexels.com/photos/13348192/pexels-photo-13348192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
-                />
+                <img src="/assets/images/pexels-photo-13348192.jpeg" alt="" />
                 <div className="overlay">
                   <span>Nairobi</span>
                 </div>

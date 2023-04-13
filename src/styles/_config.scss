@@ -16,10 +16,10 @@ $brand-selection-color: #f9f6f0;
 $brand-overlay-color: #4c4a8a;
 $brand-bg-color: $brand-primary;
 
-$font-primary: "Public Sans", sans-serif;
-$font-secondary: "Gambarino", serif;
-$font-tertiary: "Bonny', serif";
-$font-numbers: "Melodrama", serif;
+$font-primary: "PublicSans-Regular", sans-serif;
+$font-secondary: "Gambarino-Regular", serif;
+$font-tertiary: "Bonny-Regular', serif";
+$font-numbers: "Melodrama-Semibold", serif;
 
 $font-size-base: 16px !default;
 $font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
@@ -57,17 +57,121 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   src: url("../fonts/BebasKai/fonts/BebasKai.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Didot";
-  src: url("../fonts/TheanoDidot/fonts/TheanoDidot-Regular.ttf")
-    format("truetype");
+  font-family: "Bonny-Regular";
+  src: url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Bold.woff2") format("woff2"),
+    url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Regular.woff") format("woff"),
+    url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Poppins-Light";
-  src: url("../fonts/Poppins/fonts/Poppins-Light.woff2") format("woff2"),
-    url("../fonts/Poppins/fonts/Poppins-Light.woff") format("woff"),
-    url("../fonts/Poppins/fonts/Poppins-Light.ttf") format("truetype");
-  font-weight: 100;
+  font-family: "Bonny-Medium";
+  src: url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Medium.woff2") format("woff2"),
+    url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Medium.woff") format("woff"),
+    url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bonny-Bold";
+  src: url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Bold.woff2") format("woff2"),
+    url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Bold.woff") format("woff"),
+    url("../fonts/Bonny/Fonts/WEB/fonts/Bonny-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gambarino-Regular";
+  src: url("../fonts/Gambarino/Fonts/WEB/fonts/Gambarino-Regular.woff2")
+      format("woff2"),
+    url("../fonts/Gambarino/Fonts/WEB/fonts/Gambarino-Regular.woff")
+      format("woff"),
+    url("../fonts/Gambarino/Fonts/WEB/fonts/Gambarino-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Melodrama-Light";
+  src: url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Light.woff2")
+      format("woff2"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Light.woff")
+      format("woff"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Light.ttf")
+      format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Melodrama-Regular";
+  src: url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Regular.woff2")
+      format("woff2"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Regular.woff")
+      format("woff"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Melodrama-Medium";
+  src: url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Medium.woff2")
+      format("woff2"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Medium.woff")
+      format("woff"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Melodrama-Semibold";
+  src: url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Semibold.woff2")
+      format("woff2"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Semibold.woff")
+      format("woff"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Semibold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Melodrama-Bold";
+  src: url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Bold.woff2")
+      format("woff2"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Bold.woff") format("woff"),
+    url("../fonts/Melodrama/Fonts/WEB/fonts/Melodrama-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans-Regular";
+  src: url("../fonts/PublicSans/Fonts/WEB/fonts/PublicSans-Regular.woff2")
+      format("woff2"),
+    url("../fonts/PublicSans/Fonts/WEB/fonts/PublicSans-Regular.woff")
+      format("woff"),
+    url("../fonts/PublicSans/Fonts/WEB/fonts/PublicSans-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
