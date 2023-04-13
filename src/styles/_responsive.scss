@@ -53,9 +53,9 @@
 }
 
 @media (max-width: $screen-xs) {
-  .basic_image {
-    height: 30vh !important;
-  }
+  // .basic_image {
+  //   height: 30vh !important;
+  // }
 }
 
 @media (max-width: $screen-sm) {
@@ -65,11 +65,11 @@
     align-content: center;
   }
 
-  #about_intro,
-  #featured_destinations,
-  #categories {
-    padding: 5rem 0 5rem 0 !important;
-  }
+  // #about_intro,
+  // #featured_destinations,
+  // #categories {
+  //   padding: 5rem 0 5rem 0 !important;
+  // }
   //HERO SECTION
   .hero__pattern {
     height: 100% !important;
@@ -88,9 +88,9 @@
   }
 
   // INTRO IMAGE
-  .basic_image {
-    height: 40vh !important;
-  }
+  // .basic_image {
+  //   height: 40vh !important;
+  // }
   // FEATURED DESTINATIONS
   .item {
     height: 300px !important;
@@ -118,10 +118,10 @@
   .d-md {
     display: block !important;
   }
-  // INTRO IMAGE
-  .basic_image {
-    height: 40vh !important;
-  }
+  // // INTRO IMAGE
+  // .basic_image {
+  //   height: 40vh !important;
+  // }
 
   // STYLING IMAGE IN INTRO SECTION
 

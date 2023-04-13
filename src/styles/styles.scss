@@ -49,6 +49,10 @@ a {
 #categories {
   padding: 3rem 0 5rem 0;
   margin: 5rem 0 0 0;
+  @media screen and (max-width: $screen-sm) {
+    padding: 0;
+    margin: 5rem 0 0 0;
+  }
 }
 
 .overflow-hidden {
@@ -101,7 +105,7 @@ a {
       width: 25%;
     }
     @media only screen and (min-width: 200px) and (max-width: 560px) {
-      width: 30%;
+      width: 40%;
     }
   }
   .menu-1 {
@@ -429,10 +433,15 @@ blockquote cite {
   align-items: center;
 }
 .basic_image {
-  width: fit-content;
-  height: 60vh;
+  height: 50vh;
   .unset_img img {
     width: unset !important;
+  }
+  @media screen and (max-width: $screen-md) {
+    height: 20vh;
+  }
+  @media screen and (min-width: 100px) and (max-width: $screen-sm) {
+    height: 45vh;
   }
 }
 
@@ -747,9 +756,9 @@ blockquote cite {
   background-color: $brand-secondary;
 }
 .footer_text {
-  font-family: $font-secondary;
-  @include font-size(22px);
-  font-weight: 800;
+  font-family: $font-capital;
+  @include font-size(18px);
+  font-weight: 400;
   letter-spacing: 5px;
 }
 .text-small {
