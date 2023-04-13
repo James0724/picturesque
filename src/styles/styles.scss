@@ -33,7 +33,7 @@ body {
 p {
   font-family: $font-primary;
   letter-spacing: 1.5px;
-  @include font-size(14px);
+  //@include font-size(14px);
 }
 a {
   color: $brand-white !important;
