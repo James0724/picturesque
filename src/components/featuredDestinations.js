@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function FeaturedDestinations() {
   return (
     <div className="featured pb-5">
@@ -55,10 +57,13 @@ export default function FeaturedDestinations() {
           <div className="row">
             <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
               <div className="item">
-                <img
-                  src="/assets/images/pink-flamingo-1484781_960_720.jpg"
-                  alt=""
-                />
+                <div className="unset_img">
+                  <Image
+                    src="/assets/images/pink-flamingo-1484781_960_720.jpg"
+                    fill
+                    alt="backgroundimage"
+                  />
+                </div>
 
                 <div className="overlay">
                   <span>Nakuru</span>
@@ -67,10 +72,14 @@ export default function FeaturedDestinations() {
             </div>
             <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
               <div className="item">
-                <img
-                  src="/assets/images/harshil-gudka-77zGnfU_SFU-unsplash.jpg"
-                  alt=""
-                />
+                <div className="unset_img">
+                  <Image
+                    src="/assets/images/harshil-gudka-77zGnfU_SFU-unsplash.jpg"
+                    fill
+                    alt="backgroundimage"
+                  />
+                </div>
+
                 <div className="overlay">
                   <span>Mombasa</span>
                 </div>
@@ -78,7 +87,13 @@ export default function FeaturedDestinations() {
             </div>
             <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
               <div className="item">
-                <img src="/assets/images/pexels-photo-13348192.jpeg" alt="" />
+                <div className="unset_img">
+                  <Image
+                    src="/assets/images/pexels-photo-13348192.jpeg"
+                    fill
+                    alt="backgroundimage"
+                  />
+                </div>
                 <div className="overlay">
                   <span>Nairobi</span>
                 </div>

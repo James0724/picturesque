@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
 import { PrevButton, NextButton } from "./emblaCarouselArrowsButtons";
+import Image from "next/image";
 
 const TWEEN_FACTOR = 1.2;
 
@@ -116,11 +117,13 @@ const EmblaCarousel = (props) => {
               <div className="embla__slide" key={index}>
                 <div className="embla__slide__content__wrapper">
                   <h1 className="embla__carousel__index">0 {index + 1}</h1>
-                  <img
-                    className="embla__slide__img embla__parallax__img"
-                    src="/assets/images/elephants.jpg"
-                    alt="Your alt text"
-                  />
+                  <div className="unset_img">
+                    <Image
+                      src="/assets/images/elephants.jpg"
+                      fill
+                      alt="backgroundimage"
+                    />
+                  </div>
                 </div>
                 <div className="embla__slide__text w-100">
                   {/* <h1 className="embla__heading pt-5 pb-2">

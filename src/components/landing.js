@@ -17,11 +17,11 @@ export default function Hero() {
       <div className="hero__pattern left__down d-none d-lg-block d-xl-block">
         {imageComponent}
       </div>
-      <div className="video__wrapper">
+      {/* <div className="video__wrapper">
         <video autoPlay muted loop>
           <source src="/assets/videos/Thomson Safaris.mp4" type="video/mp4" />
         </video>
-      </div>
+      </div> */}
 
       <div className="hero__introduction">
         <div className="content-box">
