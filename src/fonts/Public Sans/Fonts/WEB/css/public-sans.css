@@ -1,0 +1,24 @@
+/**
+ * @license
+ *
+ * Font Family: Public Sans
+ * Designed by: Pablo Impallari, Rodrigo Fuenzalida, Dan Williams, USWDS
+ * URL: https://www.fontshare.com/fonts/public-sans
+ * © 2023 Indian Type Foundry
+ *
+ * Font Style:
+ * Public Sans Regular
+ *
+*/
+
+
+@font-face {
+  font-family: 'PublicSans-Regular';
+  src: url('../fonts/PublicSans-Regular.woff2') format('woff2'),
+       url('../fonts/PublicSans-Regular.woff') format('woff'),
+       url('../fonts/PublicSans-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+

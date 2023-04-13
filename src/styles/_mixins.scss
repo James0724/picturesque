@@ -1,0 +1,11 @@
+@mixin transition($transition) {
+  transition: all $transition ease;
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+@mixin inline-block() {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
