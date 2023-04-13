@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <p>
+      <p className="intro-text">
         We are a dynamic, proudly Kenya safari company. we have professional
         licenced guides speaking four languages English, Spanish, French and
         Swahili. Throught our work we uphold environmental princriples and we
