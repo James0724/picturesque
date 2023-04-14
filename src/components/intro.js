@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutIntro() {
   return (
@@ -35,7 +36,7 @@ export default function AboutIntro() {
                     quality profesional services delivered by experienced,
                     knowledgeable and freindly staff.
                   </p>
-                  <a href="/the-setting" className="button intro_btn">
+                  <Link href="/the-setting" className="button intro_btn">
                     <div className="d-flex align-items-center">
                       <div className="button-diamond">
                         <div className="button-diamond-inner">
@@ -48,12 +49,12 @@ export default function AboutIntro() {
                       </div>
                       <div className="button-text">More about us</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-4 pt-1 pb-1">
+          <div className="col-md-4">
             <div className="intro_image_container">
               <div className="basic_image">
                 <div className="unset_img">

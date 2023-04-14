@@ -37,14 +37,14 @@ export default function Banner() {
               Capture The unforgetable Memories
             </p>
           </div>
-          <p className="container__desc">
+          {/* <p className="container__desc">
             Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
             Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
             <br />
             <br />
             Vivamus magna justo, lacinia eget co nsect etur sed, convallis at
             tellus. Ves tibulum ac diam sit amet quam vehicula elementum dui.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

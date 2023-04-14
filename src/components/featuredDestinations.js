@@ -61,6 +61,7 @@ export default function FeaturedDestinations() {
                   <Image
                     src="/assets/images/pink-flamingo-1484781_960_720.jpg"
                     fill
+                    priority
                     alt="backgroundimage"
                   />
                 </div>
@@ -93,7 +94,6 @@ export default function FeaturedDestinations() {
                     src="/assets/images/pexels-photo-13348192.jpeg"
                     fill
                     priority
-                    placeholder="blur"
                     alt="backgroundimage"
                   />
                 </div>

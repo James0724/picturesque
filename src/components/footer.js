@@ -92,7 +92,6 @@ export default function Footer() {
                 <Image
                   src="/assets/images/log.png"
                   priority
-                  placeholder="blur"
                   fill
                   alt="Elephants"
                 />

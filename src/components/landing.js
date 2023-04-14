@@ -13,15 +13,17 @@ const imageComponent = (
 export default function Hero() {
   return (
     <div className="hero">
-      <div className="hero__pattern right_up">{imageComponent}</div>
-      <div className="hero__pattern left__down d-none d-lg-block d-xl-block">
-        {imageComponent}
+      <div className="hero-main d-none d-lg-block d-xl-block ">
+        <div className="hero__pattern right_up">{imageComponent}</div>
+        <div className="hero__pattern left__down d-none d-lg-block d-xl-block">
+          {imageComponent}
+        </div>
+        <div className="video__wrapper">
+          <video autoPlay muted loop>
+            <source src="/assets/videos/Thomson Safaris.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
-      {/* <div className="video__wrapper">
-        <video autoPlay muted loop>
-          <source src="/assets/videos/Thomson Safaris.mp4" type="video/mp4" />
-        </video>
-      </div> */}
 
       <div className="hero__introduction">
         <div className="content-box">

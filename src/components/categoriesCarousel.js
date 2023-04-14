@@ -117,13 +117,14 @@ const EmblaCarousel = (props) => {
               <div className="embla__slide" key={index}>
                 <div className="embla__slide__content__wrapper">
                   <h1 className="embla__carousel__index">0 {index + 1}</h1>
-                  <div className="unset_img">
-                    <Image
-                      src="/assets/images/elephants.jpg"
-                      fill
-                      placeholder="blur"
-                      alt="backgroundimage"
-                    />
+                  <div className="embla__slide__img">
+                    <div className="unset_img">
+                      <Image
+                        src="/assets/images/elephants.jpg"
+                        fill
+                        alt="backgroundimage"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="embla__slide__text w-100">

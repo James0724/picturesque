@@ -19,14 +19,21 @@
 
 body {
   line-height: 1.6;
-  color: $brand-white;
-  background: $brand-bg-color;
-  overflow-x: hidden;
-}
-
-#hero {
-  position: relative;
-  height: 100vh;
+  color: $brand-white !important;
+  background: $brand-bg-color !important;
+  overflow-x: hidden !important;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $brand-secondary;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $brand-tertiary;
+    border-radius: 10px;
+    height: 10px;
+  }
 }
 
 p {
@@ -37,9 +44,22 @@ p {
 
 a {
   color: $brand-white;
-  text-decoration: none;
+  text-decoration: none !important;
   &:hover {
-    color: $brand-tertiary;
+    color: $brand-tertiary !important;
+  }
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+}
+
+@media (max-width: $screen-sm) {
+  .mobile-centered-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 }
 
@@ -56,164 +76,6 @@ a {
 }
 
 //NAVBAR MENU STYLING
-.colorlib-nav {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  margin: 0 auto;
-
-  @media screen and (max-width: $screen-sm) {
-    margin: 0;
-  }
-
-  .top-menu {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    padding: 10px 30px 10px 30px;
-    background: rgba(34, 31, 32, 0.3);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.5px);
-    @include transition(0.5s);
-    &:hover {
-      background: rgba(34, 31, 32, 0.95);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5.2px);
-    }
-    @media screen and (max-width: $screen-sm) {
-      padding: 10px 1em;
-      height: 80px;
-    }
-    @media screen and (max-width: $screen-md) {
-      padding: 10px 1em;
-    }
-
-    @media only screen and (min-width: 200px) and (max-width: 560px) {
-      height: 65px;
-    }
-  }
-
-  #colorlib-logo {
-    height: 100%;
-    width: 20%;
-    @media screen and (max-width: $screen-md) {
-      width: 25%;
-    }
-    @media only screen and (min-width: 200px) and (max-width: 560px) {
-      width: 40%;
-    }
-  }
-
-  .menu-1 {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    width: 80%;
-    @media screen and (max-width: $screen-sm) {
-      display: none;
-    }
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-    li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      display: inline;
-      font-weight: 400;
-      a {
-        position: relative;
-        font-family: "BebasKai";
-        @include font-size(16px);
-        padding: 10px 12px;
-        color: $brand-white;
-        letter-spacing: 3px;
-        @include transition(0.5s);
-
-        &:hover {
-          color: $brand-tertiary !important;
-        }
-      }
-      &.has-dropdown {
-        position: relative;
-        .dropdown {
-          width: 140px;
-          -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-          z-index: 1002;
-          visibility: hidden;
-          opacity: 0;
-          position: absolute;
-          top: 40px;
-          left: 0;
-          text-align: left;
-          background: $brand-black;
-          padding: 20px;
-          @include border-radius(4px);
-          @include transition(0s);
-          &:before {
-            bottom: 100%;
-            left: 40px;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-            border-bottom-color: #000;
-            border-width: 8px;
-            margin-left: -8px;
-          }
-
-          li {
-            display: block;
-            margin-bottom: 7px;
-            &:last-child {
-              margin-bottom: 0;
-            }
-            a {
-              padding: 2px 0;
-              display: block;
-              color: lighten($brand-black, 60%);
-              line-height: 1.2;
-              text-transform: none;
-              font-size: 13px;
-              letter-spacing: 0;
-              &:hover {
-                color: $brand-white;
-              }
-            }
-          }
-        }
-        &:hover,
-        &:focus {
-          a {
-            color: $brand-tertiary;
-          }
-        }
-      }
-
-      &.active {
-        > a {
-          color: $brand-tertiary !important;
-          position: relative;
-
-          &:after {
-            opacity: 1;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-          }
-        }
-      }
-    }
-  }
-}
 
 // HERO VIDEO
 .video__wrapper video {
@@ -276,7 +138,7 @@ a {
     .bottom {
       clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
       color: transparent;
-      background: linear-gradient(177deg, #ff6f007c 53%, #fff 65%);
+      background: linear-gradient(177deg, #f7bb8da2 53%, #fff 65%);
       background-clip: text;
       transform: translateX(-0.02em);
     }
@@ -431,6 +293,9 @@ blockquote cite {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: $screen-md) {
+    align-items: unset !important;
+  }
 }
 .basic_image {
   height: 50vh;
@@ -438,7 +303,7 @@ blockquote cite {
     width: unset !important;
   }
   @media screen and (max-width: $screen-md) {
-    height: 28vh;
+    height: 30vh;
   }
   @media screen and (min-width: 100px) and (max-width: $screen-sm) {
     height: 40vh;
@@ -455,6 +320,9 @@ blockquote cite {
 
 .intro_btn {
   padding: 1rem 3rem;
+  @media screen and (max-width: $screen-sm) {
+    padding: 1rem 0;
+  }
 }
 
 .button {
@@ -496,11 +364,11 @@ blockquote cite {
   border: 1px solid $brand-tertiary;
   transform: rotate(45deg);
   transition: border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  @media screen and (min-width: 100px) and (max-width: $screen-sm) {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
 }
-
-// .button-diamond.white {
-//   border-color: #fff;
-// }
 
 .button-text {
   display: inline-block;
@@ -577,6 +445,10 @@ blockquote cite {
   height: 400px;
   position: relative;
   overflow: hidden;
+  @media (max-width: $screen-md) {
+    width: 300px;
+    height: 300px;
+  }
 
   img {
     width: 100%;
@@ -629,13 +501,16 @@ blockquote cite {
 }
 
 .container__content {
-  width: 80%;
+  width: 90%;
   height: 100%;
   position: relative;
   z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: $screen-sm) {
+    width: 80%;
+  }
 }
 
 .container__content::before {

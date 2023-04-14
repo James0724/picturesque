@@ -54,6 +54,14 @@
     padding: 1rem 0.5rem;
   }
 }
+
+.embla__slide__img {
+  @media (max-width: $screen-sm) {
+    height: 300px;
+    width: 300px;
+  }
+}
+
 // .ebla__index__container {
 //   margin: 5px;
 //   padding-left: 3rem;

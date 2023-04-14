@@ -15,12 +15,11 @@ export default function Home() {
       </section>
       <section id="about_intro">
         <AboutIntro />
-        <div className="footer_section_image">
+        <div className="footer_section_image d-none d-lg-block d-xl-block">
           <div className="unset_img">
             <Image
               src="/assets/images/footerA.png"
               fill
-              placeholder="blur"
               priority
               alt="backgroundimage"
             />
@@ -29,13 +28,12 @@ export default function Home() {
       </section>
       <section id="featured_destinations">
         <FeaturedDestinations />
-        <div className="footer_section_image">
+        <div className="footer_section_image d-none d-lg-block d-xl-block">
           <div className="unset_img">
             <Image
               src="/assets/images/footerimgB.png"
               fill
               priority
-              placeholder="blur"
               alt="backgroundimage"
             />
           </div>
@@ -49,13 +47,12 @@ export default function Home() {
       <section id="categories">
         <Categories />
 
-        <div className="footer_section_image">
+        <div className="footer_section_image d-none d-lg-block d-xl-block">
           <div className="unset_img">
             <Image
               src="/assets/images/Art.png"
               fill
               priority
-              placeholder="blur"
               alt="backgroundimage"
             />
           </div>
