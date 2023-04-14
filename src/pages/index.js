@@ -20,6 +20,7 @@ export default function Home() {
             <Image
               src="/assets/images/footerA.png"
               fill
+              placeholder="blur"
               priority
               alt="backgroundimage"
             />
@@ -34,6 +35,7 @@ export default function Home() {
               src="/assets/images/footerimgB.png"
               fill
               priority
+              placeholder="blur"
               alt="backgroundimage"
             />
           </div>
@@ -49,7 +51,13 @@ export default function Home() {
 
         <div className="footer_section_image">
           <div className="unset_img">
-            <Image src="/assets/images/Art.png" fill alt="backgroundimage" />
+            <Image
+              src="/assets/images/Art.png"
+              fill
+              priority
+              placeholder="blur"
+              alt="backgroundimage"
+            />
           </div>
         </div>
       </section>

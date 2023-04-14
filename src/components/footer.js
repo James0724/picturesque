@@ -89,7 +89,13 @@ export default function Footer() {
           <div className="logo-wrapper d-flex justify-content-center pt-5">
             <div className="logo-img">
               <div className="unset_img">
-                <Image src="/assets/images/log.png" fill alt="Elephants" />
+                <Image
+                  src="/assets/images/log.png"
+                  priority
+                  placeholder="blur"
+                  fill
+                  alt="Elephants"
+                />
               </div>
             </div>
           </div>

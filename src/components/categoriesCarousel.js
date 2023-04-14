@@ -121,6 +121,7 @@ const EmblaCarousel = (props) => {
                     <Image
                       src="/assets/images/elephants.jpg"
                       fill
+                      placeholder="blur"
                       alt="backgroundimage"
                     />
                   </div>
