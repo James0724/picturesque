@@ -60,6 +60,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
 @font-face {
   font-family: "BebasKai";
   src: url("../fonts/BebasKai/fonts/BebasKai.ttf") format("truetype");
+  font-display: fallback;
 }
 @font-face {
   font-family: "Bonny-Regular";
@@ -69,6 +70,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 400;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -79,6 +81,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 500;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -89,6 +92,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 700;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -102,6 +106,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 400;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -115,6 +120,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 300;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -128,6 +134,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 400;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -141,6 +148,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 500;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -154,6 +162,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 600;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -166,6 +175,7 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 700;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -179,4 +189,5 @@ $screen-md-max: ($screen-lg-min - 1) !default;
   font-weight: 400;
   font-display: swap;
   font-style: normal;
+  font-display: fallback;
 }

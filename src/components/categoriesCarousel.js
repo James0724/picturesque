@@ -70,7 +70,7 @@ const EmblaCarousel = (props) => {
             <h1>Experience serenity inspired by the land</h1>
           </div>
         </div>
-        <div className="row pb-5 overflow-hidden ">
+        <div className="row pb-5 ">
           <div className="col-md-8">
             <div className="heading_container">
               <div className="heading_wrapper">

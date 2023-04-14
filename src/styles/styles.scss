@@ -1,7 +1,5 @@
 @import "../../node_modules/rfs/scss";
-@import "responsive";
 @import "config";
-@import "mixins";
 @import "embla";
 
 //MIXINS
@@ -20,24 +18,26 @@
 // DEFAULT STYLING
 
 body {
-  font-family: "Didot";
-  line-height: 1.4;
-  color: $brand-white !important;
-  background: $brand-bg-color !important;
-  overflow-x: hidden !important;
+  line-height: 1.6;
+  color: $brand-white;
+  background: $brand-bg-color;
+  overflow-x: hidden;
 }
+
 #hero {
   position: relative;
   height: 100vh;
 }
+
 p {
   font-family: $font-primary;
   letter-spacing: 1.5px;
-  //@include font-size(14px);
+  @include font-size(14px);
 }
+
 a {
-  color: $brand-white !important;
-  text-decoration: none !important;
+  color: $brand-white;
+  text-decoration: none;
   &:hover {
     color: $brand-tertiary;
   }
@@ -55,10 +55,6 @@ a {
   }
 }
 
-.overflow-hidden {
-  overflow: hidden !important;
-}
-
 //NAVBAR MENU STYLING
 .colorlib-nav {
   margin: 0;
@@ -72,6 +68,7 @@ a {
   @media screen and (max-width: $screen-sm) {
     margin: 0;
   }
+
   .top-menu {
     height: 100px;
     display: flex;
@@ -98,6 +95,7 @@ a {
       height: 65px;
     }
   }
+
   #colorlib-logo {
     height: 100%;
     width: 20%;
@@ -108,6 +106,7 @@ a {
       width: 40%;
     }
   }
+
   .menu-1 {
     display: flex;
     align-items: center;
@@ -117,6 +116,7 @@ a {
       display: none;
     }
   }
+
   ul {
     padding: 0;
     margin: 0;
@@ -531,18 +531,6 @@ blockquote cite {
   height: 100%;
 }
 
-// .button-diamond-hovered {
-//   position: absolute;
-//   left: 0%;
-//   top: 0%;
-//   right: auto;
-//   bottom: auto;
-//   width: 100%;
-//   height: 100%;
-//   background-color: $brand-primary;
-//   transform: translate(-100%, 100%);
-// }
-
 .button-diamond-arrow-container {
   display: flex;
   width: 100%;
@@ -606,12 +594,6 @@ blockquote cite {
     height: 100%;
     padding: 28px 25px;
     color: #fff;
-    // background: rgb(255, 110, 0);
-    // background: linear-gradient(
-    //   0deg,
-    //   rgba(255, 111, 0, 0.4) 20%,
-    //   rgba(255, 158, 1, 0.2) 100%
-    // );
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -649,12 +631,8 @@ blockquote cite {
 .container__content {
   width: 80%;
   height: 100%;
-
-  /* Position */
   position: relative;
   z-index: 0;
-
-  /* Flex */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -665,7 +643,6 @@ blockquote cite {
   width: 130%;
   height: 100%;
   transform: skewX(-20deg);
-
   content: "";
   position: absolute;
   top: 0;
@@ -680,8 +657,6 @@ blockquote cite {
   margin: 35px 0 20px;
   border-radius: 50%;
   position: relative;
-
-  /* Flex */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -695,7 +670,6 @@ blockquote cite {
   background-color: $brand-tertiary;
   width: 70px;
   height: 2px;
-
   content: "";
   position: absolute;
   left: 0;
@@ -707,7 +681,6 @@ blockquote cite {
   background-color: $brand-tertiary;
   width: 70px;
   height: 2px;
-
   content: "";
   position: absolute;
   right: 0;
@@ -718,8 +691,6 @@ blockquote cite {
 .container__title {
   color: #0e0f0f;
   width: fit-content;
-
-  /* Flex */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -750,7 +721,6 @@ blockquote cite {
 }
 
 // FOOTER STYLING
-
 .footer {
   color: $brand-white;
   background-color: $brand-secondary;
