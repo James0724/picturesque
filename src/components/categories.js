@@ -11,9 +11,9 @@ export default function Categories() {
   return (
     <div className="experiences">
       <div className="container-fluid">
-        <section className="sandbox__carousel">
+        <div className="sandbox__carousel">
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-        </section>
+        </div>
 
         <div className="carousel"></div>
       </div>

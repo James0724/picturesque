@@ -53,7 +53,7 @@ export default function FeaturedDestinations() {
           </div>
         </div>
 
-        <div className="carousel">
+        <div className="featured_items">
           <div className="row">
             <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
               <div className="item">
