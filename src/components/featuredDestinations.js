@@ -13,7 +13,7 @@ export default function FeaturedDestinations() {
           </div>
         </div>
         <div className="row pt-3">
-          <div className="col-md-8 pt-1 pb-1">
+          <div className="col-md-8 text-spacing-pad">
             <div className="h-100 d-flex justify-content-center ">
               <div className="heading_container">
                 <div className="heading_wrapper">
@@ -25,7 +25,7 @@ export default function FeaturedDestinations() {
                       <h1>Our featured Destinations</h1>
                     </div>
                   </div>
-                  <p className="intro_text">
+                  <p className="intro_text pt-2">
                     Experience breathtaking views on our featured desinations
                     with exclusive private wild game viewing, unrivalled style,
                     comfort and a range of activities for a full immersion in
@@ -35,7 +35,7 @@ export default function FeaturedDestinations() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 pt-1 pb-1">
+          <div className="col-md-4 text-spacing-pad">
             <a href="/the-setting" className="button intro_btn">
               <div className="d-flex align-items-center">
                 <div className="button-diamond">
@@ -53,54 +53,271 @@ export default function FeaturedDestinations() {
           </div>
         </div>
 
-        <div className="featured_items">
-          <div className="row">
-            <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
-              <div className="item">
-                <div className="unset_img">
-                  <Image
-                    src="/assets/images/pink-flamingo-1484781_960_720.jpg"
-                    fill
-                    priority
-                    alt="backgroundimage"
-                  />
-                </div>
+        <div className="content-holder content-spacing">
+          <div className="row g-2">
+            <div className="article-wrap col-sm-6 col-md-4 ">
+              <article className="article has-hover-s3">
+                <div className="img-wrap">
+                  <div className="unset_img">
+                    <Image
+                      src="/assets/images/elephants.jpg"
+                      fill
+                      className="attachment-550x358 size-550x358 wp-post-image"
+                      alt="backgroundimage"
+                    />
+                  </div>
 
-                <div className="overlay">
-                  <span>Nakuru</span>
+                  <div className="img-caption">6 Days</div>
+                  <div className="hover-article">
+                    {/* <div className="icons">
+                    <a href="#">
+                      <span className="icon-favs"></span>
+                    </a>
+                    <a href="https://themes.waituk.com/entrada-modern/product/mountain-hiking-tour/">
+                      <span className="icon-reply"></span>
+                    </a>
+                  </div> */}
+                    <div className="info-footer">
+                      <span className="price">
+                        from
+                        <span>
+                          <span>$</span>
+                          <span>1,299</span>
+                        </span>
+                      </span>
+                      <a
+                        href="https://themes.waituk.com/entrada-modern/product/mountain-hiking-tour/"
+                        className="link-more"
+                      >
+                        explore
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <h3>
+                  <a href="https://themes.waituk.com/entrada-modern/product/mountain-hiking-tour/">
+                    6 day highlights of Maasai mara
+                  </a>
+                </h3>
+                <p>
+                  Get closer to thrilling wildlife interactions and see
+                  creatures big and small on morning and afternoon game drives.
+                </p>
+              </article>
             </div>
-            <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
-              <div className="item">
-                <div className="unset_img">
-                  <Image
-                    src="/assets/images/harshil-gudka-77zGnfU_SFU-unsplash.jpg"
-                    fill
-                    priority
-                    alt="backgroundimage"
-                  />
-                </div>
+            <div className="article-wrap col-sm-6 col-md-4">
+              <article className=" article has-hover-s3">
+                <div className="img-wrap">
+                  <div className="unset_img">
+                    <Image
+                      src="/assets/images/rhino-g33e949cc8_1920.jpg"
+                      fill
+                      className="attachment-550x358 size-550x358 wp-post-image"
+                      alt="backgroundimage"
+                    />
+                  </div>
 
-                <div className="overlay">
-                  <span>Mombasa</span>
+                  <div className="img-caption">6 Days</div>
+                  <div className="hover-article">
+                    <div className="info-footer">
+                      <span className="price">
+                        from
+                        <span>
+                          <span>$</span>
+                          <span>1,299</span>
+                        </span>
+                      </span>
+                      <a
+                        href="https://themes.waituk.com/entrada-modern/product/mountain-hiking-tour/"
+                        className="link-more"
+                      >
+                        explore
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <h3>
+                  <a href="https://themes.waituk.com/entrada-modern/product/mountain-hiking-tour/">
+                    6 day Mout kenya Hiking Tour
+                  </a>
+                </h3>
+                <p>
+                  Get closer to thrilling wildlife interactions and see
+                  creatures big and small on morning and afternoon game drives.
+                </p>
+              </article>
             </div>
-            <div className="col-sm col-md-4 pt-2 pb-2 mobile-centered-div">
-              <div className="item">
-                <div className="unset_img">
-                  <Image
-                    src="/assets/images/pexels-photo-13348192.jpeg"
-                    fill
-                    priority
-                    alt="backgroundimage"
-                  />
+            <div className="article-wrap col-sm-6 col-md-4">
+              <article className=" article has-hover-s3">
+                <div className="img-wrap">
+                  <div className="unset_img">
+                    <Image
+                      src="/assets/images/rhino-g33e949cc8_1920.jpg"
+                      fill
+                      className="attachment-550x358 size-550x358 wp-post-image"
+                      alt="backgroundimage"
+                    />
+                  </div>
+
+                  <div className="img-caption">18 Days</div>
+                  <div className="hover-article">
+                    <div className="info-footer">
+                      <span className="price">
+                        from
+                        <span>
+                          <span>$</span>
+                          <span>1,149</span>
+                        </span>
+                      </span>
+                      <a
+                        href="https://themes.waituk.com/entrada-modern/product/jungle-safari-in-africa/"
+                        className="link-more"
+                      >
+                        explore
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className="overlay">
-                  <span>Nairobi</span>
+                <h3>
+                  <a href="https://themes.waituk.com/entrada-modern/product/jungle-safari-in-africa/">
+                    8 day Highlights of lenya
+                  </a>
+                </h3>
+                <p>
+                  Get closer to thrilling wildlife interactions and see
+                  creatures big and small on morning and afternoon game drives.
+                </p>
+              </article>
+            </div>
+            <div className="article-wrap col-sm-6 col-md-4">
+              <article className=" article has-hover-s3">
+                <div className="img-wrap">
+                  <div className="unset_img">
+                    <Image
+                      src="/assets/images/elephants.jpg"
+                      fill
+                      className="attachment-550x358 size-550x358 wp-post-image"
+                      alt="backgroundimage"
+                    />
+                  </div>
+
+                  <div className="img-caption">9 Hrs</div>
+                  <div className="hover-article">
+                    {/* <div className="star-rating">
+                    <input className="front_rating" type="hidden" value="5" />
+                  </div> */}
+
+                    <div className="info-footer">
+                      <span className="price">
+                        from
+                        <span>
+                          <span>$</span>
+                          <span>799</span>
+                        </span>
+                      </span>
+                      <a
+                        href="https://themes.waituk.com/entrada-modern/product/paris-city-tour/"
+                        className="link-more"
+                      >
+                        explore
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <h3>
+                  <a href="https://themes.waituk.com/entrada-modern/product/paris-city-tour/">
+                    Nairobi city tour excursions
+                  </a>
+                </h3>
+                <p>
+                  Get closer to thrilling wildlife interactions and see
+                  creatures big and small on morning and afternoon game drives.
+                </p>
+              </article>
+            </div>
+            <div className="article-wrap col-sm-6 col-md-4">
+              <article className=" article has-hover-s3">
+                <div className="img-wrap">
+                  <div className="unset_img">
+                    <Image
+                      src="/assets/images/rhino-g33e949cc8_1920.jpg"
+                      fill
+                      className="attachment-550x358 size-550x358 wp-post-image"
+                      alt="backgroundimage"
+                    />
+                  </div>
+
+                  <div className="img-caption">11 Days</div>
+                  <div className="hover-article">
+                    <div className="info-footer">
+                      <span className="price">
+                        from
+                        <span>
+                          <span>$</span>
+                          <span>429</span>
+                        </span>
+                      </span>
+                      <a
+                        href="https://themes.waituk.com/entrada-modern/product/city-tours-in-europe/"
+                        className="link-more"
+                      >
+                        explore
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h3>
+                  <a href="https://themes.waituk.com/entrada-modern/product/city-tours-in-europe/">
+                    11 days Best of Nakuru
+                  </a>
+                </h3>
+                <p>
+                  Get closer to thrilling wildlife interactions and see
+                  creatures big and small on morning and afternoon game drives.
+                </p>
+              </article>
+            </div>
+            <div className="article-wrap col-sm-6 col-md-4">
+              <article className=" article has-hover-s3">
+                <div className="img-wrap">
+                  <div className="unset_img">
+                    <Image
+                      src="/assets/images/elephants.jpg"
+                      fill
+                      className="attachment-550x358 size-550x358 wp-post-image"
+                      alt="backgroundimage"
+                    />
+                  </div>
+
+                  <div className="img-caption">10 Hrs</div>
+                  <div className="hover-article">
+                    <div className="info-footer">
+                      <span className="price">
+                        from
+                        <span>
+                          <span>$</span>
+                          <span>1,099</span>
+                        </span>
+                      </span>
+                      <a
+                        href="https://themes.waituk.com/entrada-modern/product/its-a-jungle-out-there/"
+                        className="link-more"
+                      >
+                        explore
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h3>
+                  <a href="https://themes.waituk.com/entrada-modern/product/its-a-jungle-out-there/">
+                    Mombasa excursions
+                  </a>
+                </h3>
+                <p>
+                  Get closer to thrilling wildlife interactions and see
+                  creatures big and small on morning and afternoon game drives.
+                </p>
+              </article>
             </div>
           </div>
         </div>

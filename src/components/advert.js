@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="ad_banner ">
+    <div className="ad_banner">
       <div className="container__content">
         <div className="container__svgBox">
           <svg
@@ -26,13 +26,13 @@ export default function Banner() {
         </div>
         <div className="container__title">
           <p className="container__subTitle">SAFARI TOURS AND TRAVELS</p>
-          <div className="content-box__title pt-0 pb-3">
+          <div className="content-box__title">
             <div className="top">Picturesque</div>
             <div className="bottom" aria-hidden="true">
               Picturesque
             </div>
           </div>
-          <p className="container__subTitle pb-5">
+          <p className="container__subTitle ">
             Capture The unforgetable Memories
           </p>
         </div>

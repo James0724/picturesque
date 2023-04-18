@@ -1,21 +1,44 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import { debounce } from "../utilities/helper";
 
 export const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  //   const closeExperiencesMenu = () => {
-  //    setIsMenuOpen(false);
-  //  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 50) ||
+        currentScrollPos < 10
+    );
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <nav className="brand_nav" role="navigation">
+    <nav className={`brand_nav ${visible ? "active" : ""}`} role="navigation">
       <div className="top-menu">
         <div className="container-fluid">
-          <div className="row align-items-center d-none">
-            <div id="safari_logo" className="col">
+          <div className="menu-container">
+            <div id="safari_logo" className="logo">
               <Link href="/">
                 <div className="unset_img">
                   <Image
@@ -27,20 +50,57 @@ export const Menu = () => {
                 </div>
               </Link>
             </div>
-            <div className="col-8 d-lg-none d-xl-none ">
-              <div className="ham_container" onClick={toggleMenu}>
-                <div class={`hamburger ${isMenuOpen ? "open" : "close"}`}>
-                  <i class="hamburger__icon"></i>
-                  <i class="hamburger__icon"></i>
-                  <i class="hamburger__icon"></i>
+            <div className="menu">
+              <div
+                className="ham_container d-lg-none d-xl-none "
+                onClick={toggleMenu}
+              >
+                <div className={`hamburger ${isMenuOpen ? "close" : "open"}`}>
+                  <i className="hamburger__icon"></i>
+                  <i className="hamburger__icon"></i>
+                  <i className="hamburger__icon"></i>
                 </div>
                 <div
-                  className={`sidebar__menu ${isMenuOpen ? "close" : "open"}`}
+                  className={`sidebar__menu ${isMenuOpen ? "open" : "close"}`}
                 ></div>
               </div>
+              <nav class={` navitem ${isMenuOpen ? "open" : ""}`}>
+                <div className="nav-container">
+                  <ul
+                    class={`menu-items ${isMenuOpen ? "open" : ""}`}
+                    onClick={() => {
+                      closeMenu();
+                    }}
+                  >
+                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
+                      <Link href="/" class="menu-nav__link">
+                        Home
+                      </Link>
+                    </li>
+
+                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
+                      <Link href="/about" class="menu-nav__link">
+                        About
+                      </Link>
+                    </li>
+
+                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
+                      <Link href="projects.html" class="menu-nav__link">
+                        Projects
+                      </Link>
+                    </li>
+
+                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
+                      <Link href="/contact" class="menu-nav__link">
+                        Contacts
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
 
-            <div className="col  d-none nav_items d-lg-block d-xl-block">
+            {/* <div className="col  d-none nav_items d-lg-block d-xl-block">
               <a href="/">Home</a>
             </div>
             <div className="col d-none nav_items d-lg-block d-xl-block">
@@ -75,7 +135,7 @@ export const Menu = () => {
             </div>
             <div className="col d-none nav_items d-lg-block d-xl-block">
               <a href="#">Enquiries</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

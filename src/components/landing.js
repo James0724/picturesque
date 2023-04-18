@@ -28,14 +28,28 @@ export default function Hero() {
         </div>
 
         <div className="hero__introduction">
-          <div className="content-box">
+          <div className="content-box container">
+            <h1>Creating memorable experience</h1>
+            <div className="underline">
+              <div className="left line" style={{ width: "100px" }}></div>
+              <div className="square animate-the-square" id="square">
+                <span
+                  id="inside-square"
+                  className="animate-the-inside-square"
+                ></span>
+              </div>
+              <div className="right line" style={{ width: "100px" }}></div>
+            </div>
+          </div>
+
+          {/* <div className="content-box">
             <div className="content-box__title">
               <div className="top">Picturesque Beyond Words</div>
               <div className="bottom" aria-hidden="true">
                 Picturesque Beyond Words
               </div>
             </div>
-            {/* <div className="content-box__text ">
+            <div className="content-box__text ">
             <blockquote>
               <p>Capture Lasting Memories on An African Safari</p>
               <cite>Abraham Lincoln</cite>
@@ -45,8 +59,8 @@ export default function Hero() {
             <a href="!#" className="float-end btn btn-primary">
               Start Your Adventure
             </a>
+          </div> 
           </div> */}
-          </div>
         </div>
       </div>
     </>

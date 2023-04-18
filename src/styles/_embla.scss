@@ -19,9 +19,13 @@
 }
 .embla__slide__img {
   display: block;
-  height: var(--slide-height);
+  height: 350px;
   width: 100%;
-  object-fit: cover;
+  //   object-fit: cover;
+
+  @media (max-width: $screen-sm) {
+    height: 250px;
+  }
 }
 .embla__slide__content__wrapper {
   h1 {
@@ -55,52 +59,6 @@
   }
 }
 
-.embla__slide__img {
-  @media (max-width: $screen-sm) {
-    height: 300px;
-    width: 300px;
-  }
-}
-.embla__slide__content {
-  @media (max-width: $screen-sm) {
-    .embla__slide__carousel_img {
-      width: 95vw;
-      height: 500px;
-    }
-  }
-  @media screen and (min-width: 600px) and (max-width: 700px) {
-    .embla__slide__carousel_img {
-      width: 95vw;
-      height: 450px;
-    }
-  }
-  @media screen and (min-width: 400px) and (max-width: 599px) {
-    .embla__slide__carousel_img {
-      width: 95vw;
-      height: 400px;
-    }
-  }
-  @media screen and (min-width: 0px) and (max-width: 399px) {
-    .embla__slide__carousel_img {
-      width: 95vw;
-      height: 300px;
-    }
-  }
-}
-
-// .ebla__index__container {
-//   margin: 5px;
-//   padding-left: 3rem;
-//   padding-right: 3rem;
-
-//   h1 {
-//     position: relative;
-//     top: 30%;
-//     width: 100%;
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
 .embla__carousel__index {
   font-family: $font-numbers;
   @include font-size(18px);
@@ -113,45 +71,3 @@
   margin: 0 !important;
   padding: 0 !important;
 }
-// .embla__slide__number {
-//   width: 4.6rem;
-//   height: 4.6rem;
-//   z-index: 1;
-//   position: absolute;
-//   left: 0;
-//   top: -10;
-//   font-weight: 900;
-//   pointer-events: none;
-// }
-// .embla__slide__number > span {
-//   color: var(--brand-primary);
-//   background-image: linear-gradient(
-//     45deg,
-//     var(--brand-primary),
-//     var(--brand-secondary)
-//   );
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   font-size: 1.6rem;
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-// }
-// .embla__parallax {
-//   height: 100%;
-//   overflow: hidden;
-// }
-// .embla__parallax__layer {
-//   position: relative;
-//   height: 100%;
-//   width: 100%;
-// }
-// .embla__parallax__img {
-//   max-width: none;
-//   width: calc(100% + (var(--slide-spacing) * 2));
-//   margin-left: calc(var(--slide-spacing) * -1);
-// }
