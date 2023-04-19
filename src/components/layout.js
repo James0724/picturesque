@@ -1,5 +1,5 @@
 import Head from "next/head";
-//import Footer from "./footer";
+import Footer from "./footer";
 import { Menu } from "./menu";
 
 export const Layout = ({ children }) => {
@@ -14,6 +14,7 @@ export const Layout = ({ children }) => {
       <main>
         <Menu />
         {children}
+        <Footer />
       </main>
     </>
   );

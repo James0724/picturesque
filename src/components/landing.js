@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { UnderlineEffect } from "./underlineEffect";
 
 const imageComponent = (
   <Image
@@ -30,16 +31,7 @@ export default function Hero() {
         <div className="hero__introduction">
           <div className="content-box container">
             <h1>Creating memorable experience</h1>
-            <div className="underline">
-              <div className="left line" style={{ width: "100px" }}></div>
-              <div className="square animate-the-square" id="square">
-                <span
-                  id="inside-square"
-                  className="animate-the-inside-square"
-                ></span>
-              </div>
-              <div className="right line" style={{ width: "100px" }}></div>
-            </div>
+            <UnderlineEffect />
           </div>
 
           {/* <div className="content-box">

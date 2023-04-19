@@ -34,7 +34,11 @@ export const Menu = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <nav className={`brand_nav ${visible ? "active" : ""}`} role="navigation">
+    <nav
+      className={`brand_nav ${visible ? "active" : ""} 
+      }`}
+      role="navigation"
+    >
       <div className="top-menu">
         <div className="container-fluid">
           <div className="menu-container">
@@ -64,40 +68,48 @@ export const Menu = () => {
                   className={`sidebar__menu ${isMenuOpen ? "open" : "close"}`}
                 ></div>
               </div>
-              <nav class={` navitem ${isMenuOpen ? "open" : ""}`}>
-                <div className="nav-container">
+              <div className="nav-wrap">
+                <nav className={` navitem ${isMenuOpen ? "open" : ""}`}>
                   <ul
-                    class={`menu-items ${isMenuOpen ? "open" : ""}`}
+                    className={`menu-items ${isMenuOpen ? "open" : ""}`}
                     onClick={() => {
                       closeMenu();
                     }}
                   >
-                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
-                      <Link href="/" class="menu-nav__link">
+                    <li
+                      className={`menu-nav__item ${isMenuOpen ? "open" : ""}`}
+                    >
+                      <Link href="/" className="menu-nav__link">
                         Home
                       </Link>
                     </li>
 
-                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
-                      <Link href="/about" class="menu-nav__link">
+                    <li
+                      className={`menu-nav__item ${isMenuOpen ? "open" : ""}`}
+                    >
+                      <Link href="/about" className="menu-nav__link">
                         About
                       </Link>
                     </li>
 
-                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
-                      <Link href="projects.html" class="menu-nav__link">
+                    <li
+                      className={`menu-nav__item ${isMenuOpen ? "open" : ""}`}
+                    >
+                      <Link href="projects.html" className="menu-nav__link">
                         Projects
                       </Link>
                     </li>
 
-                    <li class={`menu-nav__item ${isMenuOpen ? "open" : ""}`}>
-                      <Link href="/contact" class="menu-nav__link">
+                    <li
+                      className={`menu-nav__item ${isMenuOpen ? "open" : ""}`}
+                    >
+                      <Link href="/contact" className="menu-nav__link">
                         Contacts
                       </Link>
                     </li>
                   </ul>
-                </div>
-              </nav>
+                </nav>
+              </div>
             </div>
 
             {/* <div className="col  d-none nav_items d-lg-block d-xl-block">

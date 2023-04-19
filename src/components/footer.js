@@ -2,117 +2,145 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer>
-      <section className="footer">
-        <div className="end_footer_section_image">
-          <div className="unset_img">
-            <Image src="/assets/images/soil.png" fill alt="backgroundimage" />
-          </div>
-        </div>
-        <div className="container">
-          <div className="social-link-wrapper"></div>
-          <div className="row pt-5 pb-5">
-            <div className="col-md-4 d-flex flex-column align-items-center">
-              <h6 className="footer_text">About Picturesque</h6>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/about" className="links ">
-                  About
-                </a>
-              </div>
-
-              <div className="menu-item pt-2 pb-2">
-                <a href="/journal" className="links">
-                  Journal
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/careers" className="links">
-                  Careers
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/contact" className="links">
-                  Contact
-                </a>
-              </div>
+    <footer className="footer">
+      <div class="py-5 bg-tertiary">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 text-center mb-3 mb-lg-0 text-lg-start">
+              <h3 class="text-banner m-0">
+                Begin your adventurous journey here.
+              </h3>
             </div>
-            <div className="col-md-4 d-flex flex-column  align-items-center">
-              <h6 className="footer_text"> Experiences</h6>
-
-              <div className="menu-item pt-2 pb-2">
-                <a href="/africa/namibia" className="links">
-                  Game Drive Safaris
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/africa/rwanda" className="links">
-                  Nature Walks Safaris
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/africa/botswana" className="links">
-                  Marine Parks Safaris
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/africa/zambia" className="links">
-                  City Excursions Safaris
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/africa/zimbabwe" className="links">
-                  Mountain Climbing Safaris
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4 d-flex flex-column align-items-center">
-              <h6 className="footer_text">Journeys &amp; Services</h6>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/journeys" className="links">
-                  Our Journeys
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/journeys/journey-inspiration" className="links">
-                  Journey Inspiration
-                </a>
-              </div>
-              <div className="menu-item pt-2 pb-2">
-                <a href="/journeys/our-services" className="links">
-                  Our Services
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="separetor pt-3 pb-3"></div>
-          <div className="logo-wrapper d-flex justify-content-center pt-5">
-            <div className="logo-img">
-              <div className="unset_img">
-                <Image
-                  src="/assets/images/log.png"
-                  priority
-                  fill
-                  alt="Elephants"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="copyright-wrapper d-flex flex-column align-items-center pt-5">
-            <div className="bottom-links pt-2 pb-2">
-              <a href="/disclaimer" className="links px-2 py-2">
-                <span>Disclaimer</span>
-              </a>
-              <a href="/privacy-policy" className="links pr-2 pl-2">
-                <span>Privacy Policy</span>
+            <div class="col-lg-5 text-center text-lg-end">
+              <a href="#" class="btn btn-outline-white">
+                Get started
               </a>
             </div>
-            <p className="text-small px-2 py-2">
-              Copyright ©2022 Wilderness Safaris. All rights reserved
-            </p>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="widget">
+                <h3>
+                  About <span class="text-primary">Divine Travel Nest</span>{" "}
+                </h3>
+                <p>
+                  Divine Travel Nest was established out of commitment to
+                  provide a sustainable safari tour services around east Africa,
+                  with awesome and affordable experience.
+                </p>
+              </div>
+              <div class="widget">
+                <h3>Connect</h3>
+                <ul class="list-unstyled social">
+                  <li>
+                    <a href="#">
+                      <span class="icon-instagram"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon-twitter"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon-facebook"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon-linkedin"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon-pinterest"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon-dribbble"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 ml-auto">
+              <div class="widget">
+                <h3>Links</h3>
+                <ul class="list-unstyled float-left links">
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <a href="#">News</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="widget">
+                <h3>Company</h3>
+                <ul class="list-unstyled float-left links">
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <a href="#">News</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="widget">
+                <h3>Contact</h3>
+                Nairobi, Kenya
+                <ul class="list-unstyled links mb-4">
+                  <li>
+                    <a href="tel://11234567890">0724 000 000</a>
+                  </li>
+                  <li>
+                    <a href="tel://11234567890">0724 000 000</a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <p>
+                Copyright ©{new Date().getFullYear()}
+                All rights reserved | Divine Travel Nest
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

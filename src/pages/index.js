@@ -1,7 +1,5 @@
 import AboutIntro from "@/components/intro";
 import Hero from "@/components/landing";
-import "normalize.css";
-import "bootstrap/dist/css/bootstrap.css";
 import FeaturedDestinations from "@/components/featuredDestinations";
 import Banner from "@/components/advert";
 import Categories from "@/components/categories";

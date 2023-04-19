@@ -1,6 +1,7 @@
 @import "../../node_modules/rfs/scss";
 @import "config";
 @import "embla";
+@import "pages";
 @import "external";
 
 //MIXINS
@@ -14,6 +15,12 @@
   display: inline-block;
   zoom: 1;
   *display: inline;
+}
+
+@for $i from 1 through 4 {
+  .menu-nav__item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1s) + 0.15s;
+  }
 }
 
 // DEFAULT STYLING
@@ -75,11 +82,21 @@ section {
 .background-brown {
   background-color: $brand-brown-color !important;
 }
+.bg-tertiary {
+  background-color: $brand-tertiary !important;
+}
 .text-black {
   color: $brand-black !important;
 }
 .text-for-bright-bg {
   color: $brand-primary;
+}
+.text-banner {
+  font-family: $font-numbers;
+  font-weight: 800;
+  white-space: nowrap;
+  letter-spacing: 3px;
+  @include font-size(30px);
 }
 .text-spacing-pad {
   padding-bottom: 3rem;
@@ -103,6 +120,9 @@ section {
   width: 100%;
   z-index: 50;
   @include transition(0.5s);
+  @media screen and (max-width: $screen-md) {
+    top: 0;
+  }
 }
 .brand_nav.active {
   top: 0;
@@ -147,34 +167,74 @@ section {
     width: 50%;
   }
 }
+.nav-wrap {
+  position: relative;
+}
 .navitem {
   display: block;
   float: right;
+
+  @include transition(0.5s);
   @media screen and (max-width: $screen-md) {
-    display: none;
-  }
-  .nav-container {
-    display: flex;
-    align-items: center;
+    transform: translateY(-100%);
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background: $brand-black;
+    height: 100vh;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    &.open {
+      transform: translateY(0);
+    }
+    @media screen and (min-width: 100px) and (max-width: $screen-sm) {
+      width: 100%;
+    }
   }
 }
 
 .menu-items {
   display: flex;
   margin: 0;
+  align-items: center;
   padding: 0;
   list-style: none;
   flex-direction: row;
+  @media screen and (max-width: $screen-md) {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    //align-items: center;
+    //justify-content: center;
+    //@include transition(0.5s);
+
+    // &.open {
+    //   transform: translateY(0);
+    //
+    // }
+  }
+
   li {
     padding: 0 2rem;
+    margin: 1rem 0;
+    @include transition(0.5s);
     a {
       font-family: $font-numbers;
     }
+    @media (max-width: $screen-md) {
+      transform: translateX(100vw);
+      &.open {
+        transform: translateX(0);
+      }
+    }
   }
 }
-.menu-items.open {
-  flex-direction: column;
-}
+
+// .menu-items.open {
+//   @media screen and (max-width: $screen-md) {
+//     flex-direction: column;
+//   }
+// }
 /*Toggle Menu*/
 .sidebar__menu {
   float: right;
@@ -183,6 +243,7 @@ section {
   justify-content: center;
   align-items: center;
   margin: auto;
+  z-index: 50;
   cursor: pointer;
   transition: transform 0.4s ease-in-out 0.2s;
 
@@ -209,9 +270,23 @@ section {
       height: 1px;
     }
   }
+  &.open {
+    @media screen and (max-width: $screen-md) {
+      display: flex;
+      transition: transform 0.4s ease-in-out 0.2s;
+    }
+  }
+  &.close {
+    @media screen and (max-width: $screen-md) {
+      display: none;
+      transition: transform 0.4s ease-in-out 0.2s;
+    }
+  }
 }
 .ham_container {
   float: right;
+  position: relative;
+  z-index: 50;
 }
 .hamburger {
   display: flex;
@@ -221,7 +296,6 @@ section {
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
-  z-index: 1;
 
   &__icon {
     display: inline-block;
@@ -231,14 +305,18 @@ section {
     border-radius: 2px;
     transition: transform 0.4s ease-in-out 0.2s;
   }
-}
-.open {
-  display: flex;
-  transition: transform 0.4s ease-in-out 0.2s;
-}
-.close {
-  display: none;
-  transition: transform 0.4s ease-in-out 0.2s;
+  &.open {
+    @media screen and (max-width: $screen-md) {
+      display: flex;
+      transition: transform 0.4s ease-in-out 0.2s;
+    }
+  }
+  &.close {
+    @media screen and (max-width: $screen-md) {
+      display: none;
+      transition: transform 0.4s ease-in-out 0.2s;
+    }
+  }
 }
 
 #safari_logo {
@@ -1031,40 +1109,90 @@ blockquote cite {
   color: $brand-white;
   background-color: $brand-secondary;
 }
-.footer_text {
-  font-family: $font-capital;
-  @include font-size(18px);
-  font-weight: 400;
-  letter-spacing: 5px;
+.site-footer {
+  @include font-size(14px);
+  padding: 70px 0;
 }
-.text-small {
-  @include font-size(12px);
-  letter-spacing: 2px;
+
+.site-footer .widget {
+  margin-bottom: 40px;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
-.menu-item {
-  a {
-    letter-spacing: 2px;
-    font-family: $font-primary;
+.site-footer .widget h3,
+.site-footer .widget .h3 {
+  @include font-size(16px);
+  font-family: $font-numbers;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.site-footer .widget .links {
+  width: 150px;
+}
+.site-footer .widget .links li {
+  margin-bottom: 10px;
+}
+
+.site-footer .social li {
+  display: inline-block;
+}
+.site-footer .social li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 50%;
+  .site-footer .social li a:before {
+    display: none;
   }
-}
-.separetor {
-  border-top: 1px solid $brand-tertiary;
-}
-.full-width {
-  .separetor {
-    margin-left: -3rem;
-    margin-right: -3rem;
+  .site-footer .social li a > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .site-footer .social li a:hover {
+    background: #fda153;
+    color: #fff;
   }
 }
 
-.logo-img {
-  width: 30%;
-}
-.bottom-links {
-  @include font-size(12px);
-  opacity: 0.7;
-  letter-spacing: 2px;
-}
+// .footer_text {
+//   font-family: $font-capital;
+//   @include font-size(18px);
+//   font-weight: 400;
+//   letter-spacing: 5px;
+// }
+// .text-small {
+//   @include font-size(12px);
+//   letter-spacing: 2px;
+// }
+// .menu-item {
+//   a {
+//     letter-spacing: 2px;
+//     font-family: $font-primary;
+//   }
+// }
+// .separetor {
+//   border-top: 1px solid $brand-tertiary;
+// }
+// .full-width {
+//   .separetor {
+//     margin-left: -3rem;
+//     margin-right: -3rem;
+//   }
+// }
+
+// .logo-img {
+//   width: 30%;
+// }
+// .bottom-links {
+//   @include font-size(12px);
+//   opacity: 0.7;
+//   letter-spacing: 2px;
+// }
 
 //CAROUSEL CONTROLS
 .controls {
@@ -1079,10 +1207,10 @@ blockquote cite {
 //FOOTER IMAGE SECTIONS
 
 //NAVBAR SOCIAL ICONS
-.social_icons {
-  width: fit-content;
-}
-.social_icons_container {
-  display: flex;
-  float: right;
-}
+// .social_icons {
+//   width: fit-content;
+// }
+// .social_icons_container {
+//   display: flex;
+//   float: right;
+// }
