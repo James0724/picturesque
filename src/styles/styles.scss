@@ -94,7 +94,6 @@ section {
 .text-banner {
   font-family: $font-numbers;
   font-weight: 800;
-  white-space: nowrap;
   letter-spacing: 3px;
   @include font-size(30px);
 }
