@@ -41,12 +41,12 @@ export const Menu = () => {
     >
       <div className="top-menu">
         <div className="container-fluid">
-          <div className="menu-container">
+          <div className="menu-container w-100">
             <div id="safari_logo" className="logo">
               <Link href="/">
                 <div className="unset_img">
                   <Image
-                    src="/assets/images/log.png"
+                    src="/assets/logo/Logo.png"
                     fill
                     priority
                     alt="backgroundimage"
@@ -54,6 +54,7 @@ export const Menu = () => {
                 </div>
               </Link>
             </div>
+
             <div className="menu">
               <div
                 className="ham_container d-lg-none d-xl-none "
@@ -96,58 +97,13 @@ export const Menu = () => {
                       className={`menu-nav__item ${isMenuOpen ? "open" : ""}`}
                     >
                       <Link href="projects.html" className="menu-nav__link">
-                        Projects
-                      </Link>
-                    </li>
-
-                    <li
-                      className={`menu-nav__item ${isMenuOpen ? "open" : ""}`}
-                    >
-                      <Link href="/contact" className="menu-nav__link">
-                        Contacts
+                        Safaris
                       </Link>
                     </li>
                   </ul>
                 </nav>
               </div>
             </div>
-
-            {/* <div className="col  d-none nav_items d-lg-block d-xl-block">
-              <a href="/">Home</a>
-            </div>
-            <div className="col d-none nav_items d-lg-block d-xl-block">
-              <a href="/">About Us</a>
-            </div>
-            <div className="has-dropdown col d-none nav_items d-lg-block d-xl-block">
-              <a href="tours.html">Safaris</a>
-              <ul className="dropdown">
-                <li>
-                  <a href="#">All Destinations</a>
-                </li>
-                <li>
-                  <a href="#">Game Drive Safaris</a>
-                </li>
-                <li>
-                  <a href="#">Nature Walk Safaris</a>
-                </li>
-                <li>
-                  <a href="#">Marine Park Safaris</a>
-                </li>
-                <li>
-                  <a href="hotels.html">Cultural Safaris</a>
-                </li>
-                <li>
-                  <a href="#">City Excursion Safaris</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col d-none nav_items d-lg-block d-xl-block">
-              <a href="#">Blogs</a>
-            </div>
-            <div className="col d-none nav_items d-lg-block d-xl-block">
-              <a href="#">Enquiries</a>
-            </div> */}
           </div>
         </div>
       </div>

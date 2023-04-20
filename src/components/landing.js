@@ -33,26 +33,6 @@ export default function Hero() {
             <h1>Creating memorable experience</h1>
             <UnderlineEffect />
           </div>
-
-          {/* <div className="content-box">
-            <div className="content-box__title">
-              <div className="top">Picturesque Beyond Words</div>
-              <div className="bottom" aria-hidden="true">
-                Picturesque Beyond Words
-              </div>
-            </div>
-            <div className="content-box__text ">
-            <blockquote>
-              <p>Capture Lasting Memories on An African Safari</p>
-              <cite>Abraham Lincoln</cite>
-            </blockquote> 
-          </div>
-         <div className="content-box__btn">
-            <a href="!#" className="float-end btn btn-primary">
-              Start Your Adventure
-            </a>
-          </div> 
-          </div> */}
         </div>
       </div>
     </>

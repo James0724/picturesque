@@ -10,6 +10,12 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
   }
+  @media screen and (min-width: $screen-sm) and (max-width: $screen-md) {
+    height: 85vh;
+  }
+  @media screen and (min-width: 100px) and (max-width: 767px) {
+    height: 70vh;
+  }
 }
 
 .hero-image-bg {
@@ -29,12 +35,41 @@
   @include font-size(60px);
 }
 
+/***********************************************HOME PAGE********************************************/
+
+.intro_image_container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .unset_img img {
+    width: unset !important;
+  }
+  .intro_image {
+    height: 450px;
+    width: 300px;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    margin-bottom: 5rem;
+    .unset_img img {
+      width: 100%;
+    }
+    .intro_image {
+      max-height: 350px;
+      width: unset !important;
+    }
+  }
+}
+
 /***********************************************ABOUT PAGE********************************************/
 //ABOUT IMAGES
-.about_image_container {
-}
+
 //ABOUT SECTIONS
 .sec {
+  min-height: 75vh;
+  position: relative;
   &:before {
     content: "";
     position: absolute;
@@ -59,3 +94,22 @@
     transform: skew(0);
   }
 }
+
+//@media screen and (max-width: $screen-md) {
+//}
+//     @include mini-desktopxd{
+//    .innercontactform ul li.form_paddbtm .roboto li:first-child img {height: 50px;}
+//   .filloutformarea{
+//     .font60 {font-size: 40px;line-height: 60px;margin-bottom: 50px;}
+//     .boldlist{
+//       &::after {height: 200px;width: 200px;}
+//       li{padding: 0px 0px 45px 45px;
+//         &::after{height: 20px;width: 20px;}
+//         &::before{left: 10px;}
+//         h3{@include fontSize(20px);}
+//         p{font-size: 12px; max-width: 340px; line-height:24px;}
+//       }
+//     }
+//   }
+//   li .form_box {margin-bottom: 45px;}
+// }

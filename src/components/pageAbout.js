@@ -5,11 +5,12 @@ export default function PageAboutIntro({
   Heading,
   MainText,
   AboutImage,
+  ClassName,
 }) {
   return (
     <div className="about__intro">
       <div className="container">
-        <div className="heading text-for-bright-bg d-lg-none d-xl-none">
+        <div className={`heading ${ClassName} d-lg-none d-xl-none`}>
           <div className="heading__small">
             <h3>{SubHeading}</h3>
           </div>
@@ -22,7 +23,9 @@ export default function PageAboutIntro({
             <div className="h-100 d-flex justify-content-center ">
               <div className="heading_container">
                 <div className="heading_wrapper">
-                  <div className="heading text-for-bright-bg d-none d-lg-block d-xl-block ">
+                  <div
+                    className={`heading ${ClassName} d-none d-lg-block d-xl-block `}
+                  >
                     <div className="heading__small">
                       <h3>{SubHeading}</h3>
                     </div>
@@ -39,7 +42,7 @@ export default function PageAboutIntro({
             <div className="intro_image_container">
               <div className="intro_image">
                 <div className="unset_img">
-                  <Image src={AboutImage} fill priority alt="Elephants" />
+                  <Image src={AboutImage} fill priority alt="" />
                 </div>
               </div>
             </div>
