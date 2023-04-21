@@ -28,7 +28,7 @@ export default function About() {
               <div className="row">
                 <div className="col-md">
                   <div className="heading">
-                    <div className="heading__large">
+                    <div className="heading__large pt-1">
                       <h1>Our Manifesto</h1>
                     </div>
                   </div>
@@ -78,7 +78,7 @@ export default function About() {
 
                 <div className="col-md">
                   <div className="heading">
-                    <div className="heading__large">
+                    <div className="heading__large pt-1">
                       <h1>Our Vision</h1>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ export default function About() {
               <div className="row">
                 <div className="col-md">
                   <div className="heading">
-                    <div className="heading__large">
+                    <div className="heading__large pt-1">
                       <h1>Our Mission</h1>
                     </div>
                   </div>

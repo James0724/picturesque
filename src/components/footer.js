@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="container">
           <div className="grids-col-3">
             <div
-              className="container
+              className="container-fluid
             py-3 "
             >
               <h2 className="text-banner">Contact us</h2>
@@ -47,7 +47,7 @@ export default function Footer() {
                 you can reach us by filling this form and we will get back to
                 you as soon as possible
               </h2>
-              <form action="#" className="container">
+              <form action="#" className="container-fluid">
                 <div className="row">
                   <div className="col-md mb-3">
                     <input

@@ -37,7 +37,7 @@ export const Menu = () => {
     <nav class={`nav-cont ${visible ? "active" : ""}`}>
       <div class="navbar-wrap">
         <div class="logo">
-          <Link class="logo_text" href="#">
+          <Link class="logo_text" href="/" onClick={closeMenu}>
             <div className="unset_img">
               <Image
                 src="/assets/logo/Logo.png"
@@ -50,22 +50,22 @@ export const Menu = () => {
         </div>
         <ul class={`menu ${isMenuOpen ? "show" : " "}`}>
           <li class="menu_item">
-            <Link href="/" class="menu_link">
+            <Link href="/" onClick={closeMenu} class="menu_link">
               Home
             </Link>
           </li>
           <li class="menu_item">
-            <Link href="/about" class="menu_link">
+            <Link href="/about" onClick={closeMenu} class="menu_link">
               About
             </Link>
           </li>
           <li class="menu_item">
-            <Link href="" class="menu_link">
+            <Link href="" class="menu_link" onClick={closeMenu}>
               Safaris
             </Link>
           </li>
           <li class="menu_item">
-            <Link href="" class="menu_link">
+            <Link href="" class="menu_link" onClick={closeMenu}>
               Journey
             </Link>
           </li>
