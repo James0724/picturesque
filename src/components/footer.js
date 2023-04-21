@@ -1,51 +1,90 @@
 import Image from "next/image";
+import { Button } from "./uiElements";
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="contact-form text-bg-light ">
+      <div className="contact-form text-bg-light p-5">
         <div className="container">
           <div className="grids-col-3">
-            <h2 class="text-h2 ">Need some inspiration?</h2>
+            <div
+              className="container
+            py-3 "
+            >
+              <h2 className="text-banner">Contact us</h2>
+              <div class="contact-info">
+                <div class="address mt-4">
+                  <i class="icon-room"></i>
+                  <h4 class="mb-2">Location:</h4>
+                  <p>Nairobi, Kenya</p>
+                </div>
+                <div class="open-hours mt-4">
+                  <i class="icon-clock-o"></i>
+                  <h4 class="mb-2">Open Hours:</h4>
+                  <p>
+                    Sunday-Friday:
+                    <br />
+                    11:00 AM - 2300 PM
+                  </p>
+                </div>
+                <div class="email mt-4">
+                  <i class="icon-envelope"></i>
+                  <h4 class="mb-2">Email:</h4>
+                  <p>info@gmail.com</p>
+                </div>
+                <div class="phone mt-4">
+                  <i class="icon-phone"></i>
+                  <h4 class="mb-2">Call:</h4>
+                  <p>0724 000000</p>
+                  <p>0724 000000</p>
+                </div>
+              </div>
+            </div>
+
             <div className="col-span-2">
+              <h2 className="text-banner-sm px-3">
+                If you have any query or would like to request for our services
+                you can reach us by filling this form and we will get back to
+                you as soon as possible
+              </h2>
               <form action="#" className="container">
-                <div class="row p-5">
-                  <div class="col-6 mb-3">
+                <div className="row">
+                  <div className="col-md mb-3">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Your Name"
                     />
                   </div>
-                  <div class="col-6 mb-3">
+                  <div className="col-md mb-3">
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Your Email"
                     />
                   </div>
-                  <div class="col-12 mb-3">
+                  <div className="col-12 mb-3">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Subject"
                     />
                   </div>
-                  <div class="col-12 mb-3">
+                  <div className="col-12 mb-3">
                     <textarea
                       name=""
                       id=""
                       cols="30"
                       rows="7"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <div class="col-12">
-                    <input
-                      type="submit"
-                      value="Send Message"
-                      class="btn btn-primary"
+                  <div className="col-12">
+                    <Button
+                      ClassName={"text-black"}
+                      LinkName={"Send"}
+                      LinkAddress={"/#"}
                     />
                   </div>
                 </div>

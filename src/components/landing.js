@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { UnderlineEffect } from "./underlineEffect";
+import { UnderlineEffect } from "./uiElements";
 
 const imageComponent = (
   <Image

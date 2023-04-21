@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./uiElements";
 
 export default function AboutIntro() {
   return (
@@ -36,20 +37,7 @@ export default function AboutIntro() {
                     quality profesional services delivered by experienced,
                     knowledgeable and freindly staff.
                   </p>
-                  <Link href="/the-setting" className="button intro_btn">
-                    <div className="d-flex align-items-center">
-                      <div className="button-diamond">
-                        <div className="button-diamond-inner">
-                          <div className="button-diamond-arrow-container">
-                            <div className="arrow-line">
-                              <div className="arrow-head arrow-head-right"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="button-text">More about us</div>
-                    </div>
-                  </Link>
+                  <Button LinkName={"More about us"} LinkAddress={"/about"} />
                 </div>
               </div>
             </div>

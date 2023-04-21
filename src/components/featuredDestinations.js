@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "./uiElements";
 
 export default function FeaturedDestinations() {
   return (
@@ -35,21 +36,10 @@ export default function FeaturedDestinations() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 text-spacing-pad">
-            <a href="/the-setting" className="button intro_btn">
-              <div className="d-flex align-items-center">
-                <div className="button-diamond">
-                  <div className="button-diamond-inner">
-                    <div className="button-diamond-arrow-container">
-                      <div className="arrow-line">
-                        <div className="arrow-head arrow-head-right"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="button-text">Explore</div>
-              </div>
-            </a>
+          <div className="col-md-4 text-spacing-pad controls">
+            <div className="float-bottom">
+              <Button LinkName={"Explore"} LinkAddress={"/#"} />
+            </div>
           </div>
         </div>
 
@@ -85,12 +75,9 @@ export default function FeaturedDestinations() {
                           <span>1,299</span>
                         </span>
                       </span>
-                      <a
-                        href="https://themes.waituk.com/entrada-modern/product/mountain-hiking-tour/"
-                        className="link-more"
-                      >
-                        explore
-                      </a>
+                      <div className="link-more">
+                        <Button LinkName={"Explore"} LinkAddress={"/#"} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -127,12 +114,9 @@ export default function FeaturedDestinations() {
                           <span>1,299</span>
                         </span>
                       </span>
-                      <a
-                        href="https://themes.waituk.com/entrada-modern/product/mountain-hiking-tour/"
-                        className="link-more"
-                      >
-                        explore
-                      </a>
+                      <div className="link-more">
+                        <Button LinkName={"Explore"} LinkAddress={"/#"} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -169,12 +153,9 @@ export default function FeaturedDestinations() {
                           <span>1,149</span>
                         </span>
                       </span>
-                      <a
-                        href="https://themes.waituk.com/entrada-modern/product/jungle-safari-in-africa/"
-                        className="link-more"
-                      >
-                        explore
-                      </a>
+                      <div className="link-more">
+                        <Button LinkName={"Explore"} LinkAddress={"/#"} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -215,12 +196,9 @@ export default function FeaturedDestinations() {
                           <span>799</span>
                         </span>
                       </span>
-                      <a
-                        href="https://themes.waituk.com/entrada-modern/product/paris-city-tour/"
-                        className="link-more"
-                      >
-                        explore
-                      </a>
+                      <div className="link-more">
+                        <Button LinkName={"Explore"} LinkAddress={"/#"} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -257,12 +235,9 @@ export default function FeaturedDestinations() {
                           <span>429</span>
                         </span>
                       </span>
-                      <a
-                        href="https://themes.waituk.com/entrada-modern/product/city-tours-in-europe/"
-                        className="link-more"
-                      >
-                        explore
-                      </a>
+                      <div className="link-more">
+                        <Button LinkName={"Explore"} LinkAddress={"/#"} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -299,12 +274,9 @@ export default function FeaturedDestinations() {
                           <span>1,099</span>
                         </span>
                       </span>
-                      <a
-                        href="https://themes.waituk.com/entrada-modern/product/its-a-jungle-out-there/"
-                        className="link-more"
-                      >
-                        explore
-                      </a>
+                      <div className="link-more">
+                        <Button LinkName={"Explore"} LinkAddress={"/#"} />
+                      </div>
                     </div>
                   </div>
                 </div>

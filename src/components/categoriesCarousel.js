@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
 import { PrevButton, NextButton } from "./emblaCarouselArrowsButtons";
 import Image from "next/image";
+import { Button } from "./uiElements";
 
 const TWEEN_FACTOR = 1.2;
 
@@ -135,20 +136,10 @@ const EmblaCarousel = (props) => {
                     Get closer to thrilling marine wildlife, you can also take a
                     swim with them!
                   </p> */}
-                  <a href="/the-setting" className="button intro_btn pt-3">
-                    <div className="d-flex align-items-center">
-                      <div className="button-diamond">
-                        <div className="button-diamond-inner">
-                          <div className="button-diamond-arrow-container">
-                            <div className="arrow-line">
-                              <div className="arrow-head arrow-head-right"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="button-text">Marine Park Safaris</div>
-                    </div>
-                  </a>
+                  <Button
+                    LinkName={"Marine Parks Safaris"}
+                    LinkAddress={"/#"}
+                  />
                 </div>
               </div>
             ))}
