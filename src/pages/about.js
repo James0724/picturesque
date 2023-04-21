@@ -127,7 +127,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <section className="why-chose-us bg-secondary ">
+      <div className="why-chose-us bg-secondary ">
         <div className="about__intro">
           <div className="container">
             <div className="heading text-white d-lg-none d-xl-none">
@@ -198,7 +198,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

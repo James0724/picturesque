@@ -34,10 +34,10 @@ export const Menu = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <nav class={`nav-cont ${visible ? "active" : ""}`}>
-      <div class="navbar-wrap">
-        <div class="logo">
-          <Link class="logo_text" href="/" onClick={closeMenu}>
+    <nav className={`nav-cont ${visible ? "active" : ""}`}>
+      <div className="navbar-wrap">
+        <div className="logo">
+          <Link className="logo_text" href="/" onClick={closeMenu}>
             <div className="unset_img">
               <Image
                 src="/assets/logo/Logo.png"
@@ -48,32 +48,32 @@ export const Menu = () => {
             </div>
           </Link>
         </div>
-        <ul class={`menu ${isMenuOpen ? "show" : " "}`}>
-          <li class="menu_item">
-            <Link href="/" onClick={closeMenu} class="menu_link">
+        <ul className={`menu ${isMenuOpen ? "show" : " "}`}>
+          <li className="menu_item">
+            <Link href="/" onClick={closeMenu} className="menu_link">
               Home
             </Link>
           </li>
-          <li class="menu_item">
-            <Link href="/about" onClick={closeMenu} class="menu_link">
+          <li className="menu_item">
+            <Link href="/about" onClick={closeMenu} className="menu_link">
               About
             </Link>
           </li>
-          <li class="menu_item">
-            <Link href="" class="menu_link" onClick={closeMenu}>
+          <li className="menu_item">
+            <Link href="" className="menu_link" onClick={closeMenu}>
               Safaris
             </Link>
           </li>
-          <li class="menu_item">
-            <Link href="" class="menu_link" onClick={closeMenu}>
+          <li className="menu_item">
+            <Link href="" className="menu_link" onClick={closeMenu}>
               Journey
             </Link>
           </li>
         </ul>
 
-        <div class="phone">
-          <span class="phone_order">Tell</span>
-          <span class="phone_number">0724 000 000</span>
+        <div className="phone">
+          <span className="phone_order">Tell</span>
+          <span className="phone_number">0724 000 000</span>
         </div>
 
         {/* <div class="login">
@@ -85,7 +85,7 @@ export const Menu = () => {
         </a>
       </div> */}
 
-        <div class="btn_menu " onClick={toggleMenu}>
+        <div className="btn_menu " onClick={toggleMenu}>
           <div className={`hamburger ${isMenuOpen ? "close" : "open"}`}>
             <i className="hamburger__icon"></i>
             <i className="hamburger__icon"></i>
