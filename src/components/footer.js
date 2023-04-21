@@ -4,7 +4,7 @@ import { Button } from "./uiElements";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="contact-form text-bg-light p-5">
+      <div className="contact-form text-bg-light px-1 py-3">
         <div className="container">
           <div className="grids-col-3">
             <div
