@@ -12,7 +12,7 @@ export const NewPageHero = ({ IntroImage, IntroText }) => {
     />
   );
   return (
-    <div class="pagehero ">
+    <div className="pagehero ">
       <div className="hero__pattern right_up">{imageComponent}</div>
       <div className="hero__pattern left__down ">{imageComponent}</div>
 
@@ -25,12 +25,12 @@ export const NewPageHero = ({ IntroImage, IntroText }) => {
           alt="Elephants"
         />
       </div>
-      <div class="hero-content">
-        <div class="container h-100 d-flex align-item-center">
-          <div class="row align-items-center">
-            <div class="col-lg-5 mx-auto text-center">
+      <div className="hero-content">
+        <div className="container h-100 d-flex align-item-center">
+          <div className="row align-items-center">
+            <div className="col-lg-5 mx-auto text-center">
               <h1
-                class="heading-text mb-2 aos-init aos-animate"
+                className="heading-text mb-2 aos-init aos-animate"
                 data-aos="fade-up"
               >
                 {IntroText}

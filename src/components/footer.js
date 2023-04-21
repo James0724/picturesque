@@ -12,29 +12,29 @@ export default function Footer() {
             py-3 "
             >
               <h2 className="text-banner">Contact us</h2>
-              <div class="contact-info">
-                <div class="address mt-4">
-                  <i class="icon-room"></i>
-                  <h4 class="mb-2">Location:</h4>
+              <div className="contact-info">
+                <div className="address mt-4">
+                  <i className="icon-room"></i>
+                  <h4 className="mb-2">Location:</h4>
                   <p>Nairobi, Kenya</p>
                 </div>
-                <div class="open-hours mt-4">
-                  <i class="icon-clock-o"></i>
-                  <h4 class="mb-2">Open Hours:</h4>
+                <div className="open-hours mt-4">
+                  <i className="icon-clock-o"></i>
+                  <h4 className="mb-2">Open Hours:</h4>
                   <p>
                     Sunday-Friday:
                     <br />
                     11:00 AM - 2300 PM
                   </p>
                 </div>
-                <div class="email mt-4">
-                  <i class="icon-envelope"></i>
-                  <h4 class="mb-2">Email:</h4>
+                <div className="email mt-4">
+                  <i className="icon-envelope"></i>
+                  <h4 className="mb-2">Email:</h4>
                   <p>info@gmail.com</p>
                 </div>
-                <div class="phone mt-4">
-                  <i class="icon-phone"></i>
-                  <h4 class="mb-2">Call:</h4>
+                <div className="phone mt-4">
+                  <i className="icon-phone"></i>
+                  <h4 className="mb-2">Call:</h4>
                   <p>0724 000000</p>
                   <p>0724 000000</p>
                 </div>

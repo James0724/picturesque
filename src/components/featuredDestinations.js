@@ -36,10 +36,8 @@ export default function FeaturedDestinations() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 text-spacing-pad controls">
-            <div className="float-bottom">
-              <Button LinkName={"Explore"} LinkAddress={"/#"} />
-            </div>
+          <div className="col-md-4 text-spacing-pad ">
+            <Button LinkName={"Explore"} LinkAddress={"/#"} />
           </div>
         </div>
 
