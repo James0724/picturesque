@@ -14,9 +14,15 @@ export default function About() {
           <PageAboutIntro
             SubHeading={"About Us"}
             Heading={"Divine Travel Nest"}
-            MainText={
-              "Divine Travel Nest was established out of commitment to provide a sustainable safari tour services around east Africa, with awesome and unforgettable experience."
-            }
+            MainText={`Divine Travel Nest (DTN) is a tour company that was
+                    established in Kenya to provide splendid and suistainable
+                    safari tour services around eastern Africa, with an
+                    impressive and memorable experience. We focus on customized
+                    safari tours for our clients including wildife, camping,
+                    adventures, honeymoon and work related conferences. Our team of professional drivers and 
+                    guides who have been approved by Tourism Regulatory Authority (TRA) ensures maximum accomplishment
+                    of the clients desires including quality and courteous services,
+                    drives, punctuality and visit to various wildlife animals and monumental places`}
             AboutImage={"/assets/images/about/birds-g7c9bbe33f_1920.jpg"}
             ClassName={"text-for-bright-bg"}
           />

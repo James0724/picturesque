@@ -27,9 +27,9 @@ export default function Banner() {
         <div className="container__title">
           <p className="container__subTitle">SAFARI TOURS AND TRAVELS</p>
           <div className="content-box__title">
-            <div className="top">Picturesque</div>
+            <div className="top">Divine Travel Nest</div>
             <div className="bottom" aria-hidden="true">
-              Picturesque
+              Divine Travel Nest
             </div>
           </div>
           <p className="container__subTitle ">

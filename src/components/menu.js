@@ -7,7 +7,8 @@ import { debounce } from "../utilities/helper";
 export const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
+  const [mainMenu, setMainMenu] = useState(true);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -27,56 +28,69 @@ export const Menu = () => {
     setPrevScrollPos(currentScrollPos);
   }, 100);
 
+  const handleMainMenu = () => {
+    if (scrollY < 100) {
+      setMainMenu(true);
+    } else {
+      setMainMenu(false);
+    }
+  };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+    window.addEventListener("scroll", handleMainMenu);
+    return () => {
+      window.removeEventListener("scroll", handleScroll),
+        window.removeEventListener("scroll", handleMainMenu);
+    };
+  }, [prevScrollPos, visible, handleScroll, handleMainMenu]);
 
   return (
-    <nav className={`nav-cont ${visible ? "active" : ""}`}>
-      <div className="navbar-wrap">
-        <div className="logo">
-          <Link className="logo_text" href="/" onClick={closeMenu}>
-            <div className="unset_img">
-              <Image
-                src="/assets/logo/Logo.png"
-                fill
-                priority
-                alt="backgroundimage"
-              />
-            </div>
+    <nav
+      className={` nav-cont ${mainMenu ? "main-menu" : " "} ${
+        visible && !mainMenu ? "active " : ""
+      }`}
+    >
+      <div className="logo">
+        <Link className="logo_text" href="/" onClick={closeMenu}>
+          <div className="unset_img">
+            <Image
+              src="/assets/logo/Logo.png"
+              fill
+              priority
+              alt="backgroundimage"
+            />
+          </div>
+        </Link>
+      </div>
+      <ul className={`menu ${isMenuOpen ? "show" : " "}`}>
+        <li className="menu_item">
+          <Link href="/" onClick={closeMenu} className="menu_link">
+            Home
           </Link>
-        </div>
-        <ul className={`menu ${isMenuOpen ? "show" : " "}`}>
-          <li className="menu_item">
-            <Link href="/" onClick={closeMenu} className="menu_link">
-              Home
-            </Link>
-          </li>
-          <li className="menu_item">
-            <Link href="/about" onClick={closeMenu} className="menu_link">
-              About
-            </Link>
-          </li>
-          <li className="menu_item">
-            <Link href="" className="menu_link" onClick={closeMenu}>
-              Safaris
-            </Link>
-          </li>
-          <li className="menu_item">
-            <Link href="" className="menu_link" onClick={closeMenu}>
-              Journey
-            </Link>
-          </li>
-        </ul>
+        </li>
+        <li className="menu_item">
+          <Link href="/about" onClick={closeMenu} className="menu_link">
+            About
+          </Link>
+        </li>
+        <li className="menu_item">
+          <Link href="" className="menu_link" onClick={closeMenu}>
+            Safaris
+          </Link>
+        </li>
+        <li className="menu_item">
+          <Link href="" className="menu_link" onClick={closeMenu}>
+            Journey
+          </Link>
+        </li>
+      </ul>
 
-        <div className="phone">
-          <span className="phone_order">Tell</span>
-          <span className="phone_number">0724 000 000</span>
-        </div>
+      {/* <div className="phone">
+        <span className="phone_order">Tell</span>
+        <span className="phone_number">0724 000 000</span>
+      </div> */}
 
-        {/* <div class="login">
+      {/* <div class="login">
         <a class="login_link login_link--button" href="#">
           Login
         </a>
@@ -85,16 +99,13 @@ export const Menu = () => {
         </a>
       </div> */}
 
-        <div className="btn_menu " onClick={toggleMenu}>
-          <div className={`hamburger ${isMenuOpen ? "close" : "open"}`}>
-            <i className="hamburger__icon"></i>
-            <i className="hamburger__icon"></i>
-            <i className="hamburger__icon"></i>
-          </div>
-          <div
-            className={`sidebar__menu ${isMenuOpen ? "open" : "close"}`}
-          ></div>
+      <div className="btn_menu " onClick={toggleMenu}>
+        <div className={`hamburger ${isMenuOpen ? "close" : "open"}`}>
+          <i className="hamburger__icon"></i>
+          <i className="hamburger__icon"></i>
+          <i className="hamburger__icon"></i>
         </div>
+        <div className={`sidebar__menu ${isMenuOpen ? "open" : "close"}`}></div>
       </div>
     </nav>
   );

@@ -42,11 +42,11 @@ export default function Footer() {
             </div>
 
             <div className="col-span-2">
-              <h2 className="text-banner-sm px-3">
+              {/* <h2 className="text-banner-sm px-3">
                 If you have any query or would like to request for our services
                 you can reach us by filling this form and we will get back to
                 you as soon as possible
-              </h2>
+              </h2> */}
               <form action="#" className="container-fluid">
                 <div className="row">
                   <div className="col-md mb-3">

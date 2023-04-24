@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
+//import { Animated } from "react-animated-css";
 import { Button } from "./uiElements";
 
 export default function AboutIntro() {
   return (
-    <div className="about__intro">
+    <div className="about__intro ">
       <div className="container">
-        <div className="heading text-for-bright-bg d-lg-none d-xl-none">
+        <div className="animate__animated animate__fadeInUp heading text-for-bright-bg d-lg-none d-xl-none">
           <div className="heading__small">
             <h3>We are Picturesque</h3>
           </div>
@@ -18,7 +18,7 @@ export default function AboutIntro() {
           <div className="col-lg-8">
             <div className="h-100 d-flex justify-content-center ">
               <div className="heading_container">
-                <div className="heading_wrapper">
+                <div className="animate__animated animate__fadeInUp ">
                   <div className="heading text-for-bright-bg d-none d-lg-block d-xl-block ">
                     <div className="heading__small">
                       <h3>We are Picturesque</h3>
@@ -28,14 +28,12 @@ export default function AboutIntro() {
                     </div>
                   </div>
                   <p className="text-black">
-                    We are a dynamic, proudly Kenya safari company. we have
-                    professional licenced guides speaking four languages
-                    English, Spanish, French and Swahili. Throught our work we
-                    uphold environmental princriples and we aim to help our
-                    community. We are at your service to make your dream
-                    vacation a reality the way you want it to be with high
-                    quality profesional services delivered by experienced,
-                    knowledgeable and freindly staff.
+                    Divine Travel Nest (DTN) is a tour company that was
+                    established in Kenya to provide splendid and suistainable
+                    safari tour services around eastern Africa, with an
+                    impressive and memorable experience. We focus on customized
+                    safari tours for our clients including wildife, camping,
+                    adventures, honeymoon and work related conferences.
                   </p>
                   <Button LinkName={"More about us"} LinkAddress={"/about"} />
                 </div>
@@ -43,7 +41,7 @@ export default function AboutIntro() {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="intro_image_container">
+            <div className="intro_image_container animate__animated animate__fadeInUp">
               <div className="intro_image">
                 <div className="unset_img">
                   <Image

@@ -483,28 +483,35 @@ section {
 /*Navbar*/
 .nav-cont {
   position: fixed;
+  visibility: hidden;
   z-index: 50;
   width: 100%;
-  top: -350px;
+  top: -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  padding: 2rem 4rem;
+
   @include transition(0.5s);
   &.active {
     top: 0;
+    visibility: visible;
+    background-color: $brand-black;
+    border-bottom: 1px solid $brand-tertiary;
+  }
+  &.main-menu {
+    top: 0;
+    visibility: visible;
+    background: rgba(36, 36, 36, 0.021);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.navbar-wrap {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 120px;
-  width: 100%;
-  border-bottom: 1px solid $brand-tertiary;
-  background-color: $brand-black;
-  z-index: 40;
-}
-
 /*Logo*/
 .logo_text {
-  width: calc(100px + 3vw);
+  width: calc(100px + 1vw);
   display: block;
 }
 
@@ -517,27 +524,24 @@ section {
   background: $brand-primary;
   top: -350px;
   transition: all 0.4s;
-  list-style: none;
-  z-index: 50;
+  z-index: 0;
+
   &.show {
-    top: 120px !important;
+    top: 90px !important;
   }
 }
 
 .menu_item {
   padding: 15px 15px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.95em;
-  font-weight: bold;
+  list-style: none;
   margin: 0 auto;
-  margin-top: 6px;
 }
 
 .menu_link {
   z-index: inherit;
   font-family: $font-numbers;
   letter-spacing: 2px;
-  @include font-size(22px);
+  @include font-size(18px);
   color: $brand-white;
   font-weight: 600;
   @include transition(0.5s);
@@ -558,25 +562,26 @@ section {
   }
 }
 
-.phone {
-  z-index: 30;
-  text-align: left;
-  display: none;
-  font-family: $font-numbers;
-  letter-spacing: 2px;
-  @include font-size(18px);
-  color: $brand-white;
-  font-weight: 600;
-}
-.phone_order {
-  color: $brand-tertiary;
-}
-.phone_number {
-  display: block;
-  color: $brand-white;
-  font-family: inherit;
-  font-size: inherit;
-}
+// .phone {
+//   text-align: left;
+//   display: none;
+//   font-family: $font-numbers;
+//   letter-spacing: 2px;
+//   @include font-size(14px);
+//   color: $brand-white;
+//   font-weight: 600;
+//   z-index: 30;
+// }
+// .phone_order {
+//   color: $brand-tertiary;
+// }
+// .phone_number {
+//   position: relative;
+//   display: block;
+//   color: $brand-white;
+//   font-family: inherit;
+//   font-size: inherit;
+// }
 
 // /*login*/
 // .login {
@@ -614,8 +619,9 @@ section {
 }
 
 @media screen and (min-width: 680px) {
-  .phone {
-    display: block;
+  .navbar-wrap {
+    justify-content: space-between;
+    padding: 10px;
   }
 }
 @media screen and (max-width: $screen-md) {
@@ -1012,7 +1018,7 @@ section {
   &__title {
     display: grid;
     font-weight: 700;
-    font-size: clamp(1rem, 6vw, 7.5rem);
+    font-size: clamp(1rem, 6vw, 7rem);
     font-family: "BebasKai";
     color: #fff;
     letter-spacing: 8px;
@@ -1021,9 +1027,11 @@ section {
       grid-area: 1/1/-1/-1;
     }
     .top {
+      font-family: $font-secondary;
       clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
     }
     .bottom {
+      font-family: $font-secondary;
       clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
       color: transparent;
       background: linear-gradient(177deg, #f7bb8da2 53%, #fff 65%);
